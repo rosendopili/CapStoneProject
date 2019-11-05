@@ -1,5 +1,6 @@
 package com.example.springbootmonolith.Model;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
@@ -28,22 +29,23 @@ public class User{
     @Column(nullable = false)
     private String password;
 
+    @JsonIgnore
     @OneToMany (mappedBy = "user",
-            cascade= {CascadeType.MERGE, CascadeType.REFRESH,CascadeType.REMOVE})
-    private List<Score> scores;
+            cascade= {CascadeType.ALL})
+    private List<Stats> stats;
 
-    public List<Score> addScore (Score score){
-        if (scores == null)
-            scores = new ArrayList<>();
-        scores.add(score);
+    public List<Stats> addScore (Stats stats){
+        if (this.stats == null)
+            this.stats = new ArrayList<>();
+        this.stats.add(stats);
 
-        return scores;
+        return this.stats;
     }
 
     public User(){}
 
-    public List<Score> getScores() { return scores;}
-    public void setScores(List<Score> scores) {this.scores = scores;}
+    public List<Stats> getStats() { return stats;}
+    public void setStats(List<Stats> stats) {this.stats = stats;}
 
     public Long getId () {return id;}
     public void setId (Long id) {this.id = id;}

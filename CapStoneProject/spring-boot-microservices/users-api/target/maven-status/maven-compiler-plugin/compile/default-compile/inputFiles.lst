@@ -1,0 +1,6 @@
+/app/src/main/java/com/example/usersapi/model/User.java
+/app/src/main/java/com/example/usersapi/repository/UserRepository.java
+/app/src/main/java/com/example/usersapi/UsersApiApplication.java
+/app/src/main/java/com/example/usersapi/service/UserServiceImpl.java
+/app/src/main/java/com/example/usersapi/controller/UsersController.java
+/app/src/main/java/com/example/usersapi/service/UserService.java
