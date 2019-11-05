@@ -34,25 +34,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.cors();
+//        http.cors();
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/signup/**", "/login/**").permitAll()
-                .antMatchers("/user/**", "/profile/**", "/comment/**", "/post/**","/{username}/**").authenticated()
+                .antMatchers("/user/**", "/scores/**", "/list/**","/{userId}/**").authenticated()
                 .and()
                 .httpBasic();
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        final CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Collections.unmodifiableList(Arrays.asList("*")));
-        configuration.setAllowedMethods(Collections.unmodifiableList(Arrays.asList("HEAD",
-                "GET", "POST", "PUT", "DELETE", "PATCH")));
-        configuration.setAllowCredentials(true);
-        configuration.setAllowedHeaders(Collections.unmodifiableList(Arrays.asList("Authorization", "Cache-Control", "Content-Type")));
-        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
-    }
+//    @Bean
+//    public CorsConfigurationSource corsConfigurationSource() {
+//        final CorsConfiguration configuration = new CorsConfiguration();
+//        configuration.setAllowedOrigins(Collections.unmodifiableList(Arrays.asList("*")));
+//        configuration.setAllowedMethods(Collections.unmodifiableList(Arrays.asList("HEAD",
+//                "GET", "POST", "PUT", "DELETE", "PATCH")));
+//        configuration.setAllowCredentials(true);
+//        configuration.setAllowedHeaders(Collections.unmodifiableList(Arrays.asList("Authorization", "Cache-Control", "Content-Type")));
+//        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//        source.registerCorsConfiguration("/**", configuration);
+//        return source;
+//    }
 }

@@ -17,4 +17,6 @@ public interface UserService extends UserDetailsService {
     public User getUser(String username);
 
     public HttpStatus deleteById(Long userId);
+
+    public User findByUserId(Long userId);
 }

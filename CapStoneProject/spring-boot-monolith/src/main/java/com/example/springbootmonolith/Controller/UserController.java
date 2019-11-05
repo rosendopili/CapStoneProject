@@ -18,11 +18,15 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/hello")
-    public String helloWorld() {
-        return "Hello World";
+    @GetMapping("/users")
+    public User getUsers(String username){
+        return userService.getUser(username);
     }
 
+    @GetMapping("/list/users")
+    public Iterable<User> listUsers(){
+        return userService.listUsers();
+    }
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) throws Exception {

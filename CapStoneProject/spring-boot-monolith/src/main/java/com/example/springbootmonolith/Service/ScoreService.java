@@ -6,4 +6,7 @@ public interface ScoreService {
 
     public Iterable<Score> listScores();
 
+    public Score recordScore(Score newScore, String username);
+
+
 }

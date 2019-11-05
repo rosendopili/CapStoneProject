@@ -3,6 +3,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property ="id")
@@ -30,6 +31,14 @@ public class User{
     @OneToMany (mappedBy = "user",
             cascade= {CascadeType.MERGE, CascadeType.REFRESH,CascadeType.REMOVE})
     private List<Score> scores;
+
+    public List<Score> addScore (Score score){
+        if (scores == null)
+            scores = new ArrayList<>();
+        scores.add(score);
+
+        return scores;
+    }
 
     public User(){}
 
