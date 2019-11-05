@@ -1,6 +1,6 @@
-package com.example.springbootmonolith.Repository;
+package com.example.statsapi.Repository;
 
-import com.example.springbootmonolith.Model.Stats;
+import com.example.statsapi.Model.Stats;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
