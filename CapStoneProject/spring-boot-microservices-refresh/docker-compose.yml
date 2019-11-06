@@ -28,16 +28,16 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=pgdev
+      - POSTGRES_PASSWORD=tom123
+      - POSTGRES_USER=tom
+      - POSTGRES_DB=arcade
   book-api:
     image: maven:3.6.1-jdk-8
     ports:
       - '8081:8081'
     working_dir: /app
     volumes:
-      - ./book-api:/app
+      - ./spring-boot-monolith:/app
     depends_on:
       - eureka
     command: 'mvn spring-boot:run'

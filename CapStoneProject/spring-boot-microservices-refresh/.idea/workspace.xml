@@ -1,21 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2ebebec-53cf-4f52-9e36-3045005ebee5" name="Default Changelist" comment="" />
+    <list default="true" id="a2f83aa4-c9d3-4a39-a2a4-8d23ec831164" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Config/IAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Config/IAuthenticationImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Config/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Config/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Controller/StatsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Repository/StatsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Service/StatsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Service/StatsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/Service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/java/com/example/springbootmonolith/SpringBootMonolithApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-monolith/src/test/java/com/example/springbootmonolith/SpringBootMonolithApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-microservices-refresh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/bushansirgur/bookapi/BookapiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/bushansirgur/bookapi/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/bushansirgur/bookapi/exception/BookNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/bushansirgur/bookapi/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/bushansirgur/bookapi/repository/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/db/migration/V1__create_book.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/test/java/com/bushansirgur/bookapi/BookapiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/com/bushansirgur/bookapi/BookapiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/com/bushansirgur/bookapi/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/com/bushansirgur/bookapi/exception/BookNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/com/bushansirgur/bookapi/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/com/bushansirgur/bookapi/repository/BookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/classes/db/migration/V1__create_book.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/target/test-classes/com/bushansirgur/bookapi/BookapiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-microservices/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-microservices/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/target/classes/application-dev.properties" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1SrFJNl1YkSMTTupNfDOA7vd5Af" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TFxRDia4qFIqWWGKb9tULHNbLW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.stylesheets" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -29,63 +115,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
+  <component name="RunManager" selected="Spring Boot.SpringBootMonolithApplication">
+    <configuration name="SpringBootMonolithApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-monolith" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootmonolith.SpringBootMonolithApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6c99342" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6c99342" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@8b3d68a" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6c99342" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@8b3d68a" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6a26999e" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
+    <configuration name="ZuulGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.zuulgateway.ZuulGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a2ebebec-53cf-4f52-9e36-3045005ebee5" name="Default Changelist" comment="" />
-      <created>1572313734627</created>
+      <changelist id="a2f83aa4-c9d3-4a39-a2a4-8d23ec831164" name="Default Changelist" comment="" />
+      <created>1573069634089</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572313734627</updated>
-      <workItem from="1572313735761" duration="72000" />
-      <workItem from="1572314159699" duration="5095000" />
+      <updated>1573069634089</updated>
+      <workItem from="1573069635416" duration="1699000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
