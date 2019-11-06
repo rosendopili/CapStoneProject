@@ -34,7 +34,7 @@ public class StatsServiceImpl implements StatsService {
         Authentication auth = authImpl.getAuthentication();
         User user = userService.getUser(auth.getName());
         newStats.setUser(user);
-        user.addStats(newStats);
+        user.getStats();
 
         return statsRepository.save(newStats);
     }

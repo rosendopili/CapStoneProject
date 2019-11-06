@@ -30,7 +30,7 @@ public class Stats {
     private Long losses;
 
     @ManyToOne (fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private User user;
 
