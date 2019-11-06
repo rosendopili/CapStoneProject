@@ -1,6 +1,7 @@
 package com.example.springbootmonolith.Service;
 
 import com.example.springbootmonolith.Config.JwtUtil;
+import com.example.springbootmonolith.Model.Stats;
 import com.example.springbootmonolith.Model.User;
 import com.example.springbootmonolith.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,6 +69,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findByUserId(Long userId) {
         return userRepository.findById(userId).get();
+    }
+
+    @Override
+    public Iterable<Stats> listUserStats(String username) {
+        User user = getUser(username);
+        return user.getStats();
     }
 
     @Override

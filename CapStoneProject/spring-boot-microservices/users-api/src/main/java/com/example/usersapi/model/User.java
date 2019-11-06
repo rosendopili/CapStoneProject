@@ -3,7 +3,7 @@ package com.example.usersapi.model;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import com.sun.org.glassfish.external.statistics.Stats;
+import com.example.statsapi.Model.Stats;
 
 import javax.persistence.*;
 import java.util.ArrayList;

@@ -6,7 +6,7 @@ public interface StatsService {
 
     public Iterable<Stats> listStats();
 
-    public Stats recordStats(Stats newStats, String username);
+    public Stats recordStats(Stats newStats);
 
 
 }

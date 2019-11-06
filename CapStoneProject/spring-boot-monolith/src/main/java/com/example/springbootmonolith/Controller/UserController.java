@@ -1,6 +1,7 @@
 package com.example.springbootmonolith.Controller;
 
 import com.example.springbootmonolith.Model.JwtResponse;
+import com.example.springbootmonolith.Model.Stats;
 import com.example.springbootmonolith.Model.User;
 import com.example.springbootmonolith.Repository.UserRepository;
 import com.example.springbootmonolith.Service.UserService;
@@ -23,9 +24,14 @@ public class UserController {
         return userService.getUser(username);
     }
 
-    @GetMapping("/list/users")
+    @GetMapping("/users/list")
     public Iterable<User> listUsers(){
         return userService.listUsers();
+    }
+
+    @GetMapping("/users/{username}/stats")
+    public Iterable<Stats> listUserStats(@PathVariable String username){
+        return userService.listUserStats(username); 
     }
 
     @PostMapping("/login")
@@ -38,7 +44,7 @@ public class UserController {
         return ResponseEntity.ok(new JwtResponse(userService.createUser(newUser)));
     }
 
-    @DeleteMapping("/user/{userId}")
+    @DeleteMapping("/users/{userId}")
     public HttpStatus deleteUserById(@PathVariable Long userId) {
         return userService.deleteById(userId);
     }

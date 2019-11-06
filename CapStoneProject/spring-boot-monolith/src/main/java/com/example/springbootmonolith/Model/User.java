@@ -34,7 +34,7 @@ public class User{
             cascade= {CascadeType.ALL})
     private List<Stats> stats;
 
-    public List<Stats> addScore (Stats stats){
+    public List<Stats> addStats (Stats stats){
         if (this.stats == null)
             this.stats = new ArrayList<>();
         this.stats.add(stats);
