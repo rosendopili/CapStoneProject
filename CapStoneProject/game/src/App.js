@@ -3,32 +3,35 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom';
+
 
 //Custom Components
 import Home from './UserComponent/Home';
 import ItemHome from './ItemComponent/ItemHome';
-import ProfilePic from './UserProfileComponent/ProfilePic'
-
+import ProfilePic from './UserProfileComponent/ProfilePic';
+import Layout from './StyleComponents/Layout';
+import { NavBar } from './StyleComponents/NavBar';
+import { Banner } from './StyleComponents/Banner';
 
 class App extends Component {
   render(){
   return (
-
-    <Router>
-      <div>
-        <nav>
-          <Link to="/">Go to Home Page</Link>{' '}
-          <Link to="/ItemHome">Check Out Items</Link>{' '}
-          <Link to="/ProfilePic">Profile Pic</Link>{' '}
-        </nav>
-        <Route exact path="/"
-        component={Home} />
-        <Route path="/ItemHome" component={ItemHome} />
-        <Route path="/ProfilePic" component={ProfilePic} />
-      </div>
-    </Router>
+    <React.Fragment>
+    <NavBar />
+    <Banner />
+      <Layout>
+        <Router>
+          <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/ItemHome" component={ItemHome} />
+              <Route path="/ProfilePic" component={ProfilePic} />
+          </Switch>
+        </Router>
+      </Layout>
+    </React.Fragment>
   );
  }
 }
