@@ -19,17 +19,17 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/users")
+    @GetMapping("/user")
     public User getUsers(String username){
         return userService.getUser(username);
     }
 
-    @GetMapping("/users/list")
+    @GetMapping("/user/list")
     public Iterable<User> listUsers(){
         return userService.listUsers();
     }
 
-    @GetMapping("/users/{username}/items")
+    @GetMapping("/user/{username}/items")
     public Iterable<Item> listUserItems(@PathVariable String username){
         return userService.listUserItems(username);
     }
@@ -44,7 +44,7 @@ public class UserController {
         return ResponseEntity.ok(new JwtResponse(userService.createUser(newUser)));
     }
 
-    @DeleteMapping("/users/{userId}")
+    @DeleteMapping("/user/{userId}")
     public HttpStatus deleteUserById(@PathVariable Long userId) {
         return userService.deleteById(userId);
     }

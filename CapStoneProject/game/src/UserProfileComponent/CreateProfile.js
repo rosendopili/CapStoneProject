@@ -23,9 +23,6 @@ const CreateProfile = (props) => {
           placeholder="bio"
         />
         <label htmlFor="profilePic">Profile Picture</label>
-
-        <ProfilePic />
-
         <input type="submit" value="createProfile" />
       </form>
     </div>

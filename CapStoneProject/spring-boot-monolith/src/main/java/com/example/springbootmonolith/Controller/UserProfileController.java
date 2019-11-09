@@ -21,12 +21,12 @@ public class UserProfileController {
     }
 
 
-    @GetMapping("/{username}")
+    @GetMapping("/get/{username}")
     public UserProfile getUserProfile(@PathVariable String username, Long userId) {
         return userProfileService.getUserProfile(userId, username);
     }
 
-    @PostMapping("/{username}")
+    @PostMapping("/post/{username}")
     public UserProfile createUserProfile(@PathVariable String username, @RequestBody UserProfile newProfile) throws Exception{
         return userProfileService.createUserProfile(username, newProfile);
     }

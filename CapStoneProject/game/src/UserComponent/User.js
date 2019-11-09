@@ -3,9 +3,9 @@ import React from 'react';
 const User = props => {
   return (
     <div>
-      <p>{props.stat.username}</p>
-      <p>{props.stat.email}</p>
-      <p>{props.stat.password}</p>
+      <p>{props.user.username}</p>
+      <p>{props.user.email}</p>
+      <p>{props.user.password}</p>
     </div>
   )
 }

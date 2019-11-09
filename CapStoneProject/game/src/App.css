@@ -18,3 +18,7 @@ canvas {
     filter: opacity(.9);
     box-shadow: 0px 1px 30px hotpink;
 }
+
+.FileUpload {
+  background-color: blue; 
+}

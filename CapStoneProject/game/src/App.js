@@ -8,7 +8,8 @@ import {
 
 //Custom Components
 import Home from './UserComponent/Home';
-import StatsHome from './StatsComponent/StatsHome';
+import ItemHome from './ItemComponent/ItemHome';
+import ProfilePic from './UserProfileComponent/ProfilePic'
 
 
 class App extends Component {
@@ -19,12 +20,13 @@ class App extends Component {
       <div>
         <nav>
           <Link to="/">Go to Home Page</Link>{' '}
-          <Link to="/StatsHome">Check Out Stats</Link>{' '}
+          <Link to="/ItemHome">Check Out Items</Link>{' '}
+          <Link to="/ProfilePic">Profile Pic</Link>{' '}
         </nav>
         <Route exact path="/"
         component={Home} />
-        <Route path="/StatsHome" component={StatsHome} />
-
+        <Route path="/ItemHome" component={ItemHome} />
+        <Route path="/ProfilePic" component={ProfilePic} />
       </div>
     </Router>
   );

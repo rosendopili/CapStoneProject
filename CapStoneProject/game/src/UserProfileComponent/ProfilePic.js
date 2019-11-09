@@ -1,10 +1,10 @@
-import React { Component } from 'react';
+import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
 
 
-const CLOUDINARY_UPLOAD_PRESET = 'your_upload_preset_id';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/your_cloudinary_app_name/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'ml_default';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/artcart/upload';
 
 export default class ProfilePic extends Component {
   constructor (props) {

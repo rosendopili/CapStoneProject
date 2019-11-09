@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
 import java.awt.*;
+import java.sql.Blob;
 
 @JsonIdentityInfo(
         generator = ObjectIdGenerators.PropertyGenerator.class,
@@ -27,8 +28,8 @@ public class UserProfile {
     @Column
     private String bio;
 
-//    @Column
-//    private Image profilePic;
+    @Column
+    private Blob profilePic;
 
     /**
      * userProfile is referenced by user table user_profile_id join column.
@@ -69,8 +70,8 @@ public class UserProfile {
     public void setBio(String bio) {
         this.bio = bio;
     }
-//
-//    public Image getProfilePic() { return profilePic;}
-//
-//    public void setProfilePic(Image profilePic) { this.profilePic = profilePic; }
+
+    public Blob getProfilePic() { return profilePic;}
+
+    public void setProfilePic(Blob profilePic) { this.profilePic = profilePic; }
 }

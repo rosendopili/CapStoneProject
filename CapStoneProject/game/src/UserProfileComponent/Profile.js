@@ -3,9 +3,9 @@ import React from 'react';
 const Profile = props => {
   return (
     <div>
-      <p>{props.stat.location}</p>
-      <p>{props.stat.bio}</p>
-      <p>{props.stat.profilePic}</p>
+      <p>{props.profile.location}</p>
+      <p>{props.profile.bio}</p>
+      <p>{props.profile.profilePic}</p>
     </div>
   )
 }
