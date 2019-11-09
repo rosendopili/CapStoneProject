@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import User from './User';
 import SignupUser from './SignupUser'
+import CreateProfile from '../UserProfileComponent/CreateProfile'
+import ProfilePic from '../UserProfileComponent/ProfilePic'
 
 class Home extends Component {
   constructor (props) {
@@ -84,6 +86,7 @@ render(){
         handlePasswordChange={this.handlePasswordChange}
         submitForm={this.submitForm}/>
 
+      <CreateProfile />
 
     </div>
   );

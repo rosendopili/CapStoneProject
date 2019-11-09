@@ -3,7 +3,6 @@ import React from 'react';
 const SignupUser = (props) => {
   return (
     <div>
-      <h3> Sign Up </h3>
       <form onSubmit={props.submitForm}>
         <label htmlFor="username">Username</label>
         <input
