@@ -23,6 +23,14 @@ const CreateProfile = (props) => {
           placeholder="bio"
         />
         <label htmlFor="profilePic">Profile Picture</label>
+        <input
+          type="file"
+          label="profilePic"
+          value={props.profilePic}
+          onChange={props.handleProfilePicChange}
+          id="profilePic"
+          placeholder="profilePic"
+        />
         <input type="submit" value="createProfile" />
       </form>
     </div>

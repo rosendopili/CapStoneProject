@@ -18,6 +18,9 @@ componentDidMount(){
       .then(res => {
         return res.json();
       })
+      .then(res=>{
+        console.log(res);
+      })
       .then(res => {
         this.setState({
           user: res,
