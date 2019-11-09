@@ -1,19 +1,19 @@
 package com.example.springbootmonolith.Service;
 
 import com.example.springbootmonolith.Config.IAuthentication;
-import com.example.springbootmonolith.Model.Stats;
+import com.example.springbootmonolith.Model.Item;
 import com.example.springbootmonolith.Model.User;
-import com.example.springbootmonolith.Repository.StatsRepository;
+import com.example.springbootmonolith.Repository.ItemRepository;
 import com.example.springbootmonolith.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StatsServiceImpl implements StatsService {
+public class ItemServiceImpl implements ItemService {
 
     @Autowired
-    StatsRepository statsRepository;
+    ItemRepository itemRepository;
 
     @Autowired
     UserRepository userRepository;
@@ -25,17 +25,17 @@ public class StatsServiceImpl implements StatsService {
     private IAuthentication authImpl;
 
     @Override
-    public Iterable<Stats> listStats() {
-        return statsRepository.findAll();
+    public Iterable<Item> listItems() {
+        return itemRepository.findAll();
     }
 
     @Override
-    public Stats recordStats(Stats newStats){
+    public Item postItem(Item newItem){
         Authentication auth = authImpl.getAuthentication();
         User user = userService.getUser(auth.getName());
-        newStats.setUser(user);
-        user.getStats();
+        newItem.setUser(user);
+        user.getItems();
 
-        return statsRepository.save(newStats);
+        return itemRepository.save(newItem);
     }
 }

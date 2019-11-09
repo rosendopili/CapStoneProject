@@ -30,22 +30,29 @@ public class User{
     private String password;
 
     @JsonIgnore
+    @OneToOne (mappedBy ="user",
+            fetch = FetchType.LAZY,
+            optional = false,
+            cascade = CascadeType.ALL)
+    private UserProfile userProfile;
+
+    @JsonIgnore
     @OneToMany (mappedBy = "user",
             cascade= {CascadeType.ALL})
-    private List<Stats> stats;
+    private List<Item> items;
 
-    public List<Stats> addStats (Stats stats){
-        if (this.stats == null)
-            this.stats = new ArrayList<>();
-        this.stats.add(stats);
+    public List<Item> addItem (Item item){
+        if (this.items == null)
+            this.items = new ArrayList<>();
+        items.add(item);
 
-        return this.stats;
+        return this.items;
     }
 
     public User(){}
 
-    public List<Stats> getStats() { return stats;}
-    public void setStats(List<Stats> stats) {this.stats = stats;}
+    public List<Item> getItems() { return items;}
+    public void setItems(List<Item> items) {this.items = items;}
 
     public Long getId () {return id;}
     public void setId (Long id) {this.id = id;}
@@ -58,4 +65,7 @@ public class User{
 
     public String getPassword () {return password;}
     public void setPassword (String password) {this.password = password;}
+
+    public UserProfile getUserProfile() { return userProfile; }
+    public void setUserProfile( UserProfile userProfile ) {this.userProfile = userProfile; }
 }
