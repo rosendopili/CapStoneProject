@@ -1,7 +1,7 @@
 package com.example.springbootmonolith.Service;
 
 import com.example.springbootmonolith.Config.JwtUtil;
-import com.example.springbootmonolith.Model.Stats;
+import com.example.springbootmonolith.Model.Item;
 import com.example.springbootmonolith.Model.User;
 import com.example.springbootmonolith.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,9 +72,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Iterable<Stats> listUserStats(String username) {
+    public Iterable<Item> listUserItems(String username) {
         User user = getUser(username);
-        return user.getStats();
+        return user.getItems();
     }
 
     @Override

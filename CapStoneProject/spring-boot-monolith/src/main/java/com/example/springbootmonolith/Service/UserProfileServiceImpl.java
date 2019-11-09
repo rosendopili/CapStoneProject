@@ -1,10 +1,9 @@
 package com.example.springbootmonolith.Service;
 
-import com.example.springbootmonolith.Repository.UserProfileRepository;
 import com.example.springbootmonolith.Model.User;
 import com.example.springbootmonolith.Model.UserProfile;
+import com.example.springbootmonolith.Repository.UserProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 @Service

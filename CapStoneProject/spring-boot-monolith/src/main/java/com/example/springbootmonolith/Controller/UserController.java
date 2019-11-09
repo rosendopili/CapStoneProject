@@ -1,7 +1,7 @@
 package com.example.springbootmonolith.Controller;
 
+import com.example.springbootmonolith.Model.Item;
 import com.example.springbootmonolith.Model.JwtResponse;
-import com.example.springbootmonolith.Model.Stats;
 import com.example.springbootmonolith.Model.User;
 import com.example.springbootmonolith.Repository.UserRepository;
 import com.example.springbootmonolith.Service.UserService;
@@ -29,9 +29,9 @@ public class UserController {
         return userService.listUsers();
     }
 
-    @GetMapping("/users/{username}/stats")
-    public Iterable<Stats> listUserStats(@PathVariable String username){
-        return userService.listUserStats(username); 
+    @GetMapping("/users/{username}/items")
+    public Iterable<Item> listUserItems(@PathVariable String username){
+        return userService.listUserItems(username);
     }
 
     @PostMapping("/login")

@@ -1,6 +1,6 @@
 package com.example.springbootmonolith.Service;
 
-import com.example.springbootmonolith.Model.Stats;
+import com.example.springbootmonolith.Model.Item;
 import com.example.springbootmonolith.Model.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,7 +14,7 @@ public interface UserService extends UserDetailsService {
 
     public Iterable<User> listUsers();
 
-    public Iterable<Stats> listUserStats(String username);
+    public Iterable<Item> listUserItems(String username);
 
     public User getUser(String username);
 
