@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Dropzone from 'react-dropzone';
 import request from 'superagent';
 
 
@@ -24,7 +23,7 @@ onImageDrop(files) {
 
 handleImageUpload(file) {
    let upload = request.post(CLOUDINARY_UPLOAD_URL)
-                       .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+                       .field('ml_default', CLOUDINARY_UPLOAD_PRESET)
                        .field('file', file);
 
    upload.end((err, response) => {
@@ -44,12 +43,7 @@ handleImageUpload(file) {
    return (
      <form>
        <div className="FileUpload">
-         <Dropzone
-           onDrop={this.onImageDrop.bind(this)}
-           multiple={false}
-           accept="image/*">
-           <div>Drop an image or click to select a file to upload.</div>
-         </Dropzone>
+
        </div>
 
        <div>

@@ -83,6 +83,8 @@ renderItem(){
         handlePriceChange={this.handlePriceChange}
         submitForm={this.submitForm}/>
 
+      <ImgDropAndCrop/>
+
       </div>
 
     )

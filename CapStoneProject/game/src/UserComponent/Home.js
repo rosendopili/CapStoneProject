@@ -62,12 +62,11 @@ componentDidMount(){
     this.setState({ password: e.target.value})
   }
 
-  renderUser(){
+  renderUser() {
     return this.state.user.map((user, key) => {
-        return <User user={user} key={key}/>
-    })
-  }
-
+      return <User user={user} key={key}/>
+  })
+}
 
 render(){
   return (
@@ -87,6 +86,7 @@ render(){
         submitForm={this.submitForm}/>
 
       <CreateProfile />
+
 
     </div>
   );
