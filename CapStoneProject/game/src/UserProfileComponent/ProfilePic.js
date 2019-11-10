@@ -48,6 +48,7 @@ fileUploadHandler = () =>{
 
      <ProfileStyles>
        <div>
+       <h6> Upload a Profile Picture </h6>
         <input type="file" onChange={this.fileSelectedHandler}/>
         <button onClick={this.fileUploadHandler}> Upload </button>
         <img

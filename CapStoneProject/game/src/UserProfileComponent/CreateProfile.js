@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePic from './ProfilePic';
 
 const CreateProfile = (props) => {
   return (
@@ -22,16 +23,8 @@ const CreateProfile = (props) => {
           id="bio"
           placeholder="bio"
         />
-        <label htmlFor="profilePic">Profile Picture</label>
-        <input
-          type="file"
-          label="profilePic"
-          value={props.profilePic}
-          onChange={props.handleProfilePicChange}
-          id="profilePic"
-          placeholder="profilePic"
-        />
-        <input type="submit" value="createProfile" />
+        <ProfilePic />
+        <input type="submit" value="Create Profile" />
       </form>
     </div>
   )
