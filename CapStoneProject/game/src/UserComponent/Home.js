@@ -89,7 +89,7 @@ render(){
         submitForm={this.submitForm}/>
 
       <CreateProfile />
-
+      <ProfilePic />
 
     </div>
   );
