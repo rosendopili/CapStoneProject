@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import User from './User';
-import SignupUser from './SignupUser'
-import CreateProfile from '../UserProfileComponent/CreateProfile'
-import ProfilePic from '../UserProfileComponent/ProfilePic'
+import SignupUser from './SignupUser';
+import CreateProfile from '../UserProfileComponent/CreateProfile';
+import ProfilePic from '../UserProfileComponent/ProfilePic';
+import Login from '../UserLogin/Login';
 
 class Home extends Component {
   constructor (props) {
@@ -12,7 +13,6 @@ class Home extends Component {
     apiDataLoaded: false
   }
 }
-
 componentDidMount(){
     fetch("http://localhost:8081/users")
       .then(res => {
@@ -38,7 +38,8 @@ componentDidMount(){
       method: 'POST',
       headers: {
         'Accept' : 'application/json, text/plain, */*',
-        'Content-Type' : 'application/json'
+        'Content-Type' : 'application/json',
+        'Authorization' : 'bearer'
       },
       body: JSON.stringify({
         username: this.state.username,
@@ -76,7 +77,7 @@ render(){
     <div>
     {this.state.apiDataLoaded ? ( this.renderUser()
       ):(
-        <p> SIGNUP </p>
+        <p> SIGNUP</p>
       )}
 
       <SignupUser
@@ -88,7 +89,9 @@ render(){
         handlePasswordChange={this.handlePasswordChange}
         submitForm={this.submitForm}/>
 
-      <CreateProfile />
+        <Login />
+
+        <CreateProfile />
 
     </div>
   );
