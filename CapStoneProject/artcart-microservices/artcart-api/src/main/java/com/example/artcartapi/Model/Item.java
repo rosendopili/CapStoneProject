@@ -1,13 +1,11 @@
-package com.example.springbootmonolith.Model;
+package com.example.artcartapi.Model;
 
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
-import java.awt.*;
 import java.sql.Blob;
 
 @JsonIdentityInfo(

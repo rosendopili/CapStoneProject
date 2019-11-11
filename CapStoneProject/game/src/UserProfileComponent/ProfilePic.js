@@ -11,6 +11,7 @@ const ProfileStyles = styled.div`
     height: 200px;
     width: 200px;
     object-fit: contain;
+    image: url('../Assets/RoProfile.JPG'); 
   }
 `;
 

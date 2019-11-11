@@ -13,24 +13,6 @@ class Home extends Component {
     apiDataLoaded: false
   }
 }
-componentDidMount(){
-    fetch("http://localhost:8081/users")
-      .then(res => {
-        return res.json();
-      })
-      .then(res=>{
-        console.log(res);
-      })
-      .then(res => {
-        this.setState({
-          user: res,
-          apiDataLoaded: true,
-          username: "",
-          email: "",
-          password:"",
-        })
-      })
-  }
 
   userSignup = (e) => {
     e.preventDefault();
@@ -66,19 +48,11 @@ componentDidMount(){
     this.setState({ password: e.target.value})
   }
 
-  renderUser() {
-    return this.state.user.map((user, key) => {
-      return <User user={user} key={key}/>
-  })
-}
 
 render(){
   return (
     <div>
-    {this.state.apiDataLoaded ? ( this.renderUser()
-      ):(
         <p> SIGNUP</p>
-      )}
 
       <SignupUser
         username={this.state.username}
