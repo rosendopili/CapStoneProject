@@ -21,8 +21,8 @@ public class UserProfileController {
     }
 
 
-    @GetMapping("/get/{username}")
-    public UserProfile getUserProfile(@PathVariable String username, Long userId) {
+    @GetMapping("/get/{userId}")
+    public UserProfile getUserProfile(String username, @PathVariable Long userId) {
         return userProfileService.getUserProfile(userId, username);
     }
 

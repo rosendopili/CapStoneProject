@@ -2,6 +2,7 @@ package com.example.springbootmonolith.Model;
 
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import javax.persistence.*;
@@ -37,6 +38,7 @@ public class UserProfile {
     //CascadeType.MERGE allows for the columns to join.
     // CascadeType.ALL creates functionality redundancies.
     // Original error was "detached entity passed to persist."
+    @JsonIgnore
     @OneToOne (fetch = FetchType.LAZY)
     @JoinColumn (name = "user_id")
     private User user;
