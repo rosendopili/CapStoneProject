@@ -28,8 +28,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_PASSWORD=tom123
-      - POSTGRES_USER=tom
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
       - POSTGRES_DB=artcart
   artcart-api:
     image: maven:3.6.1-jdk-8

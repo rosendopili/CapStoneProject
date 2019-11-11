@@ -1,10 +1,10 @@
 package com.example.artcartapi.Service;
 
+
 import com.example.artcartapi.Model.Item;
 import com.example.artcartapi.Model.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetailsService;
-
 
 public interface UserService extends UserDetailsService {
 

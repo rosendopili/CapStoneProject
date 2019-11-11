@@ -1,13 +1,12 @@
 package com.example.artcartapi.Service;
 
+
 import com.example.artcartapi.Config.JwtUtil;
 import com.example.artcartapi.Model.Item;
 import com.example.artcartapi.Model.User;
 import com.example.artcartapi.Repository.UserRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 @Service
 public class UserServiceImpl implements UserService {
