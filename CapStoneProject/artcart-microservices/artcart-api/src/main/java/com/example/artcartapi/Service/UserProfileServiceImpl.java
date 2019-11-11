@@ -1,8 +1,9 @@
 package com.example.artcartapi.Service;
 
-import com.example.springbootmonolith.Model.User;
-import com.example.springbootmonolith.Model.UserProfile;
-import com.example.springbootmonolith.Repository.UserProfileRepository;
+
+import com.example.artcartapi.Model.User;
+import com.example.artcartapi.Model.UserProfile;
+import com.example.artcartapi.Repository.UserProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
