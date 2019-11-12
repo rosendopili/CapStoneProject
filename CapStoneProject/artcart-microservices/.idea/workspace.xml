@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8c8ddc7-1db2-4305-bcc3-11d5d33f4f2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/afterMigrate.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/V1_create_inventory.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/V1_create_user_profile.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/V1_create_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/V1_create_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +90,16 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -109,7 +110,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573502395994</updated>
-      <workItem from="1573502399237" duration="7387000" />
+      <workItem from="1573502399237" duration="8081000" />
+      <workItem from="1573515081872" duration="2129000" />
     </task>
     <servers />
   </component>
@@ -121,7 +123,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
