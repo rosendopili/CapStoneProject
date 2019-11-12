@@ -28,7 +28,6 @@ Using cloudinary's image-hosting service, I was able to create an upload form fo
 
 **PLANNING DOCUMENTATION**
 
-Photos and diagrams of our work throughout the app building journey can be viewed [here](https://docs.google.com/presentation/d/1e5vG0iM1sKKpUTAdHejLI4O4lg-3y5W3rAz6ITr73r0/edit?usp=sharing).
 
 ## USER STORIES
 
