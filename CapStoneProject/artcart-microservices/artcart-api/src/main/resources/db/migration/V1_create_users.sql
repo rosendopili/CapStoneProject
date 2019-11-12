@@ -9,7 +9,7 @@ CREATE TABLE user_profile (
     id SERIAL,
     location VARCHAR(50),
     bio VARCHAR(200),
-    profilePic BLOB,
+    profilePic STRING,
     user_id FOREIGN KEY
 );
 
@@ -18,7 +18,6 @@ CREATE TABLE inventory (
     itemName VARCHAR(100) NOT NULL,
     description VARCHAR(100),
     price FLOAT,
-    photo1 BLOB,
-    photo2 BLOB,
+    photo STRING,
     user_id FOREIGN KEY
 );

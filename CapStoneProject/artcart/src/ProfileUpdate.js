@@ -22,6 +22,15 @@ const ProfileUpdate = (props) => {
           id="bio"
           placeholder="bio"
         />
+        <label htmlFor="profilePic">Profile Picture URL</label>
+        <input
+          type="text"
+          label="profilePic"
+          value={props.profilePic}
+          onChange={props.handleProfilePicChange}
+          id="profilePic"
+          placeholder="profile picture URL"
+        />
         <input type="submit" value="Update" />
       </form>
     </div>

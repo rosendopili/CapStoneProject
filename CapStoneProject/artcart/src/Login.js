@@ -32,10 +32,10 @@ class Login extends Component {
     .then(res => {
       console.log(res, "TOKEN RECEIVED");
       this.setState({
-        user: { ... this.state.user, res},
-        loggedIn: true
+        user: { ... this.state.user, token: res},
+        loggedIn: true,
       })
-      localStorage.setItem('user', res.token);
+      // this.set('user', res.token);
     })
     .catch(err => {
       console.log(err);

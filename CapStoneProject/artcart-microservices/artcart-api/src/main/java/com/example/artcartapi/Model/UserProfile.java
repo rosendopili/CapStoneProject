@@ -29,7 +29,7 @@ public class UserProfile {
     private String bio;
 
     @Column
-    private Blob profilePic;
+    private String profilePic;
 
     /**
      * userProfile is referenced by user table user_profile_id join column.
@@ -72,7 +72,7 @@ public class UserProfile {
         this.bio = bio;
     }
 
-    public Blob getProfilePic() { return profilePic;}
+    public String  getProfilePic() { return profilePic;}
 
-    public void setProfilePic(Blob profilePic) { this.profilePic = profilePic; }
+    public void setProfilePic(String profilePic) { this.profilePic = profilePic; }
 }

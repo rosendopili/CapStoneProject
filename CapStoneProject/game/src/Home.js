@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import User from './User';
-import SignupUser from './SignupUser';
-import CreateProfile from '../UserProfileComponent/CreateProfile';
-import ProfilePic from '../UserProfileComponent/ProfilePic';
-import Login from '../UserLogin/Login';
+import User from './UserComponent/User';
+import SignupUser from './UserComponent/SignupUser';
+import CreateProfile from './UserProfileComponent/CreateProfile';
+import ProfilePic from './UserProfileComponent/ProfilePic';
+import Login from './UserLogin/Login';
 
 class Home extends Component {
   constructor (props) {

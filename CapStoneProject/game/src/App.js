@@ -9,7 +9,7 @@ import {
 
 
 //Custom Components
-import Home from './UserComponent/Home';
+import Home from './Home';
 import ItemHome from './ItemComponent/ItemHome';
 import ProfilePic from './UserProfileComponent/ProfilePic';
 import Layout from './StyleComponents/Layout';

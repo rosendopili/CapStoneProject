@@ -8,12 +8,29 @@ class Profile extends Component {
       user:{
         userProfile: {
         location: "",
-        bio: ""
+        bio: "",
+        profilePic: ""
         },
-      dataLoaded: false,
-      token: ""
+      dataLoaded: false
       }
     }
+  }
+
+  componentDidMount(){
+    fetch("http://localhost:8080/profile/get/{userId}")
+      .then(res=> {
+        return res.json();
+      })
+      .then(res =>{
+        this.setState({
+          userProfile: {
+            location: "",
+            bio: "",
+            profilePic: ""
+          },
+          dataLoaded: true
+        })
+      })
   }
 
   UserProfile = (e) => {
@@ -22,11 +39,13 @@ class Profile extends Component {
     fetch("http://localhost:8080/profile/post/{username}", {
       method: 'POST',
       headers: {
-        'Content-Type' : 'application/json'
+        'Content-Type' : 'application/json',
+        'Authorization' : 'bearer'
       },
       body: JSON.stringify ({
         location: this.state.userProfile.location,
-        bio: this.state.userProfile.bio
+        bio: this.state.userProfile.bio,
+        profile: this.state.user.profilePic
       })
     })
     .then(res => {
@@ -35,7 +54,8 @@ class Profile extends Component {
     .then(res => {
       console.log(res, "PROFILE UPLOADED");
       this.setState({
-        userProfile: { ... this.state.userProfile, res},
+        userProfile: { ... this.state.userProfile,
+          token: res},
         dataLoaded: true
       })
       localStorage.getItem('user', this.state.user.token);
@@ -52,16 +72,36 @@ class Profile extends Component {
     this.setState({ userProfile: {... this.state.userProfile, bio: e.target.value}
     });
   }
+  handleProfilePicChange = e => {
+    this.setState({ userProfile: {... this.state.userProfile, profilePic: e.target.value}
+    });
+  }
+
+renderProfile() {
+  return this.state.userProfile.map((profile, key) => {
+    return <Profile profile={profile} key={key}/>
+  })
+}
+
   render() {
     return (
       <div>
+
+    {this.state.dataLoaded ? (
+      this.renderProfile()
+    ) : (
+      <p> Welcome {this.state.username}! </p> 
+    )}
+
       <h2> Update Profile </h2>
 
       <ProfileUpdate
       bio={this.state.bio}
       location={this.state.location}
+      profilePic={this.state.profilePic}
       handleBionameChange={this.handleBionameChange}
       handleLocationChange={this.handleLocationChange}
+      handleProfilePicChange={this.handleProfilePicChange}
       submitForm={e => this.UserProfile(e)}/>
 
       </div>
