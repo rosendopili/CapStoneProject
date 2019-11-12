@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8c8ddc7-1db2-4305-bcc3-11d5d33f4f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/afterMigrate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/photoUpload/photoUpload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/Service/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/Service/UserProfileService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1573502395994</updated>
       <workItem from="1573502399237" duration="8081000" />
-      <workItem from="1573515081872" duration="2129000" />
+      <workItem from="1573515081872" duration="2523000" />
+      <workItem from="1573527024461" duration="843000" />
     </task>
     <servers />
   </component>

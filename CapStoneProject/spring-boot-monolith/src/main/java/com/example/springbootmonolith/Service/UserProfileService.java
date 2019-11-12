@@ -19,5 +19,4 @@ public interface UserProfileService {
      */
     public UserProfile getUserProfile(Long userId, String username);
 
-
 }
