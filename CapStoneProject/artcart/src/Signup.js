@@ -10,7 +10,8 @@ class Signup extends Component {
         username: "",
         email: "",
         password: "",
-      }
+      },
+      loggedIn: false
     }
   }
 
