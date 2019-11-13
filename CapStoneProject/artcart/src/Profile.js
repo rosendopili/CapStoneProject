@@ -61,9 +61,6 @@ class Profile extends Component {
   render() {
     return (
       <div>
-
-      <h2> Update Profile </h2>
-
       <ProfileUpdate
       bio={this.state.bio}
       location={this.state.location}

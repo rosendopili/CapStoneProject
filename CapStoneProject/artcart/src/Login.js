@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LoginUser from './LoginUser';
 import './App.css';
+import ReactDom from 'react-dom';
+import Popup from 'react-popup';
 
 class Login extends Component {
   constructor(props){
@@ -36,10 +38,11 @@ class Login extends Component {
         user: { ... this.state.user, token: res},
         loggedIn: true,
       })
-      // this.set('user', res.token);
+      return Popup.alert('Login Successful!');
     })
     .catch(err => {
       console.log(err);
+    return  Popup.alert('Oops. Something went wrong!');
     })
   }
   handleUsernameChange = e => {
@@ -54,7 +57,7 @@ class Login extends Component {
   render() {
     return(
       <div>
-      
+
         <LoginUser
           username={this.state.username}
           email={this.state.email}

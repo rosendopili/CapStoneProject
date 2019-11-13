@@ -11,12 +11,11 @@ const LandingStyles = styled.div`
       background: url(${LandingBG}) no-repeat fixed bottom;
       background-size: contain;
       color: #ccc;
-      height: 280px;
+      height: 320px;
       width: 400px;
       position: relative;
       z-index: -2;
       text-align: center;
-      margin-bottom: 30px;
       font-family: 'Big Shoulders Text', cursive;
       letter-spacing: 1px;
       margin: 0 auto;
@@ -44,7 +43,7 @@ const LandingStyles = styled.div`
       z-index: -1;
     }
     h3{
-      margin-top: 40px;
+      margin-top: 60px;
       font-weight: bold;
     }
 

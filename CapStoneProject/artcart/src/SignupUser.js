@@ -24,7 +24,7 @@ const SignupStyles = styled.div`
   h5{
     margin-top: 12px;
     margin-bottom: 20px;
-    color: white; 
+    color: white;
   }
   input {
     border: none;
@@ -66,7 +66,7 @@ const SignupUser = (props) => {
           placeholder="password"
         />
         <input
-        class="submit"
+        className="submit"
         type="submit" value="Signup" />
       </form>
     </div>
