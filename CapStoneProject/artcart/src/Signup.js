@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SignupUser from './SignupUser';
-import User from './User'; 
+import User from './User';
 
 class Signup extends Component {
   constructor(props) {
@@ -59,21 +59,16 @@ handlePasswordChange = e => {
   });
 }
 
-renderUser() {
-  return this.state.user.map((user, key) => {
-    return <User user={user} key={key}/>
-  })
+renderUsername(){
+  return this.state.username;
 }
 
   render(){
     return(
       <div>
 
-      {this.state.loggedIn ? (
-        this.renderUser()
-      ) : (
-        <p> Welcome {this.state.username}! </p>
-      )}
+      <p> Welcome {this.renderUsername()}</p>
+
         <h2> SignUp </h2>
 
         <SignupUser

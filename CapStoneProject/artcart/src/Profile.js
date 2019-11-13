@@ -5,32 +5,15 @@ class Profile extends Component {
   constructor(props){
     super(props);
     this.state = {
-      user:{
+      user: {
         userProfile: {
         location: "",
         bio: "",
         profilePic: ""
-        },
+      },
       dataLoaded: false
       }
     }
-  }
-
-  componentDidMount(){
-    fetch("http://localhost:8080/profile/get/{userId}")
-      .then(res=> {
-        return res.json();
-      })
-      .then(res =>{
-        this.setState({
-          userProfile: {
-            location: "",
-            bio: "",
-            profilePic: ""
-          },
-          dataLoaded: true
-        })
-      })
   }
 
   UserProfile = (e) => {
@@ -40,16 +23,13 @@ class Profile extends Component {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json',
-        'Authorization' : 'bearer'
+        'Authorization': 'bearer'
       },
       body: JSON.stringify ({
         location: this.state.userProfile.location,
         bio: this.state.userProfile.bio,
-        profile: this.state.user.profilePic
+        profilePic: this.state.user.profilePic
       })
-    })
-    .then(res => {
-      return res.json();
     })
     .then(res => {
       console.log(res, "PROFILE UPLOADED");
@@ -58,7 +38,7 @@ class Profile extends Component {
           token: res},
         dataLoaded: true
       })
-      localStorage.getItem('user', this.state.user.token);
+      localStorage.getItem('user', res.token);
     })
     .catch(err=> {
       console.log(err);
@@ -77,21 +57,10 @@ class Profile extends Component {
     });
   }
 
-renderProfile() {
-  return this.state.userProfile.map((profile, key) => {
-    return <Profile profile={profile} key={key}/>
-  })
-}
 
   render() {
     return (
       <div>
-
-    {this.state.dataLoaded ? (
-      this.renderProfile()
-    ) : (
-      <p> Welcome {this.state.username}! </p> 
-    )}
 
       <h2> Update Profile </h2>
 
