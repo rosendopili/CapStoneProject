@@ -1,30 +1,36 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
 import PostItem from './PostItem';
+import GetItems from './GetItems';
 
 class Item extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: [],
-      user: localStorage.getItem('user'),
-      itemLoaded: false,
+      item: {
+        itemName: '',
+        description: '',
+        price: '',
+        photo: ''
+      },
+      // user: localStorage.getItem('user'),
+      itemLoaded: false
     }
   }
   CreateItem = (e) => {
-    e.preventDefault();
-    fetch("http://localhost:8080/items", {
+    fetch('http://localhost:8080/items', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'bearer' +
-        this.state.user
+        'Authorization': 'Bearer ' +
+      localStorage.getItem('user'),
+
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        itemName: this.state.item.itemName,
-        description: this.state.item.description,
-        price: this.state.item.price,
-        photo: this.state.item.photo
+        itemName: this.state.itemName,
+        description: this.state.description,
+        price: this.state.price,
+        photo: this.state.photo
       })
     })
     .then(res => {
@@ -60,14 +66,17 @@ render(){
 
     <div>
 
+    <GetItems />
+
     <PostItem
-      itemName={this.state.user.itemName}
-      description={this.state.user.description}
-      price={this.state.user.price}
-      photo={this.state.user.photo}
+      itemName={this.state.itemName}
+      description={this.state.description}
+      price={this.state.price}
+      photo={this.state.photo}
       handleItemNameChange={this.handleItemNameChange}
-      handleDesriptionChange={this.handleDescriptionChange}
+      handleDescriptionChange={this.handleDescriptionChange}
       handlePriceChange={this.handlePriceChange}
+      handlePhotoChange={this.handlePhotoChange}
       submitForm={e => this.CreateItem(e)}/>
 
     </div>

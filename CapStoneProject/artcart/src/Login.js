@@ -35,7 +35,7 @@ class Login extends Component {
     .then(res => {
       console.log(res, "TOKEN RECEIVED");
       this.setState({
-        user: { ... this.state.user},
+        user: {... this.state.user},
         loggedIn: true,
       })
       localStorage.setItem('user', res.token);

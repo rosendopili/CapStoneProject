@@ -1,4 +1,5 @@
 import React from 'react';
+import Item from './Item';
 
 const PostItem = (props) => {
   return (
@@ -22,15 +23,6 @@ const PostItem = (props) => {
           onChange={props.handleDescriptionChange}
           id="description"
           placeholder="description"
-        />
-        <label htmlFor="price">Price</label>
-        <input
-          type="text"
-          label="price"
-          value={props.price}
-          onChange={props.handlePriceChange}
-          id="price"
-          placeholder="price"
         />
         <label htmlFor="photo">Photo URL</label>
           <input

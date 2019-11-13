@@ -10,7 +10,7 @@ const SignupStyles = styled.div`
     border-radius: 25px;
     box-shadow: 0px 10px 20px gray;
     margin: 0 auto;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
   .submit {
     border-radius: 10px;
@@ -32,6 +32,10 @@ const SignupStyles = styled.div`
     text-align: center;
     margin-bottom: 20px;
     border-radius: 5px;
+  }
+  a {
+    text-align: center;
+    border: 1px solid white;
   }
 
 `;
@@ -93,7 +97,9 @@ const SignupUser = (props) => {
         <input
         className="submit"
         type="submit" value="Signup" />
+        <a href="./Home"> have an account? </a>
       </form>
+
     </div>
     </SignupStyles>
   )
