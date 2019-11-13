@@ -5,11 +5,11 @@ const LoginStyles = styled.div`
 
     .loginDiv {
       width: 200px;
-      height: 246px;
+      height: 280px;
+      margin: 0 auto;
       background-color: #D18D17;
       border-radius: 25px;
       box-shadow: 0px 10px 20px gray;
-      float: right;
     }
     .submit {
       border-radius: 10px;
@@ -22,16 +22,17 @@ const LoginStyles = styled.div`
       margin-bottom: 0px;
     }
     h5{
-      margin-top: 12px;
+      padding-top: 15px; 
       margin-bottom: 35px;
       color: white;
     }
     input {
       border: none;
       text-align: center;
-      margin-bottom: 35px
+      margin-bottom: 25px
       border-radius: 5px;
     }
+
 `;
 
 const LoginUser = (props) => {
@@ -59,6 +60,7 @@ const LoginUser = (props) => {
         />
         <input className="submit" type="submit" value="Login" />
       </form>
+      <a href="./Signup"> Don't have an account? </a>
     </div>
     </LoginStyles>
   )

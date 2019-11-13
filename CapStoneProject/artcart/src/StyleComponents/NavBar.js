@@ -26,7 +26,6 @@ export const NavBar = () => (
             <Nav.Item><Nav.Link href="/Landing"></Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="/Landing"> Landing</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="/Home"> Home</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="/Profile"> Profile</Nav.Link></Nav.Item>
           </Nav>
       </Navbar.Collapse>
       </Navbar>

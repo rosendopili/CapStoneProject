@@ -21,7 +21,6 @@ class Home extends Component {
     return(
       <HomeStyles>
       <div className="homediv">
-      <Signup/>
       <Login/>
       </div>
       </HomeStyles>

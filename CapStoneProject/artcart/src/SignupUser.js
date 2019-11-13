@@ -5,11 +5,12 @@ const SignupStyles = styled.div`
 
   .signupDiv {
     width: 200px;
-    height: 246px;
+    height: 380px;
     background-color: #D18D17;
     border-radius: 25px;
     box-shadow: 0px 10px 20px gray;
-    float: left;
+    margin: 0 auto;
+    margin-bottom: 20px; 
   }
   .submit {
     border-radius: 10px;
@@ -22,7 +23,7 @@ const SignupStyles = styled.div`
     margin-bottom: 0px;
   }
   h5{
-    margin-top: 12px;
+    padding-top: 16px;
     margin-bottom: 20px;
     color: white;
   }
@@ -64,6 +65,30 @@ const SignupUser = (props) => {
           onChange={props.handlePasswordChange}
           id="password"
           placeholder="password"
+        />
+        <input
+          type="text"
+          label="location"
+          value={props.location}
+          onChange={props.handleLocationChange}
+          id="location"
+          placeholder="location"
+        />
+        <input
+          type="text"
+          label="bio"
+          value={props.bio}
+          onChange={props.handleBioChange}
+          id="bio"
+          placeholder="bio"
+        />
+        <input
+          type="profilePic"
+          label="profilePic"
+          value={props.profilePic}
+          onChange={props.handleProfilePicChange}
+          id="profilePic"
+          placeholder="profile picture url"
         />
         <input
         className="submit"

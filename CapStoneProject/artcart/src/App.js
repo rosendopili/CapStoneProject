@@ -9,7 +9,6 @@ import './App.css';
 
 import Signup from './Signup';
 import Login from './Login';
-import Profile from './Profile';
 import Landing from './Landing';
 import Home from './Home';
 
@@ -26,6 +25,7 @@ class App extends Component {
       <Layout>
         <Router>
           <Switch>
+
           <Route exact path="/"
           component={Home}/>
 
@@ -34,7 +34,8 @@ class App extends Component {
 
           <Route exact path="/Home" component={Home}/>
 
-          <Route exact path="/Profile" component={Profile}/>
+          <Route exact path="/Signup"
+          component={Signup}/>
 
           </Switch>
         </Router>
