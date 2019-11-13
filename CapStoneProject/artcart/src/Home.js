@@ -12,8 +12,6 @@ const HomeStyles = styled.div`
       border-radius: 30px;
       margin: 0 auto;
     }
-
-
 `;
 
 class Home extends Component {

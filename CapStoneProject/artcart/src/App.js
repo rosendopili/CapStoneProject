@@ -11,6 +11,7 @@ import Signup from './Signup';
 import Login from './Login';
 import Landing from './Landing';
 import Home from './Home';
+import Item from './Item'; 
 
 import Layout from './StyleComponents/Layout';
 import { NavBar } from './StyleComponents/NavBar';
@@ -25,17 +26,19 @@ class App extends Component {
       <Layout>
         <Router>
           <Switch>
-
           <Route exact path="/"
           component={Home}/>
 
-          <Route exact path="/Landing"
+          <Route path="/Landing"
           component={Landing}/>
 
-          <Route exact path="/Home" component={Home}/>
+          <Route path="/Home" component={Home}/>
 
-          <Route exact path="/Signup"
+          <Route path="/Signup"
           component={Signup}/>
+
+          <Route exact path="/Item"
+          component={Item}/>
 
           </Switch>
         </Router>

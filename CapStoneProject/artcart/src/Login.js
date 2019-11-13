@@ -35,14 +35,14 @@ class Login extends Component {
     .then(res => {
       console.log(res, "TOKEN RECEIVED");
       this.setState({
-        user: { ... this.state.user, token: res},
+        user: { ... this.state.user},
         loggedIn: true,
       })
-      return Popup.alert('Login Successful!');
+      localStorage.setItem('user', res.token);
     })
     .catch(err => {
       console.log(err);
-    return  Popup.alert('Oops. Something went wrong!');
+
     })
   }
   handleUsernameChange = e => {
