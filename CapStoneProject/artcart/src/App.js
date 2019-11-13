@@ -10,6 +10,7 @@ import {
 import Signup from './Signup';
 import Login from './Login';
 import Profile from './Profile';
+import Landing from './Landing';
 
 import Layout from './StyleComponents/Layout';
 import { NavBar } from './StyleComponents/NavBar';
@@ -24,12 +25,18 @@ class App extends Component {
       <Layout>
         <Router>
           <Switch>
-              <Route exact path="/" component={Profile} />
+          <Route exact path="/"
+          component={Landing}/>
+
+          <Route exact path="/Signup" component={Signup}/>
+
+          <Route exact path="/Profile" component={Profile} />
+
+          <Route exact path="/Login" component={Login} />
+
           </Switch>
         </Router>
       </Layout>
-      <Login/>
-      <Signup/>
     </React.Fragment>
   );
  }

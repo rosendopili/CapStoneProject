@@ -31,8 +31,7 @@ export const Banner = () => (
     <Jumbotron fluid className ="banner">
       <div className="overlay"></div>
       <Container>
-        <h1>Welcome</h1>
-          <p> Buy & Sell Art with ArtCart! </p>
+        <h3>Let our walls be your canvas!</h3>
       </Container>
     </Jumbotron>
   </Styles>
