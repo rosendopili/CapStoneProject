@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LoginUser from './LoginUser';
-import './App.css'; 
+import './App.css';
 
 class Login extends Component {
   constructor(props){
@@ -54,8 +54,7 @@ class Login extends Component {
   render() {
     return(
       <div>
-        <h2> Login </h2>
-
+      
         <LoginUser
           username={this.state.username}
           email={this.state.email}

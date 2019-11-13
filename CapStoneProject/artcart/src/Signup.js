@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SignupUser from './SignupUser';
 import User from './User';
-import './App.css'; 
+import './App.css';
 
 class Signup extends Component {
   constructor(props) {
@@ -37,10 +37,10 @@ UserSignup = (e) => {
   .then(res=> {
     console.log(res, "TOKEN RECEIVED");
     this.setState({
-      user: { ...this.state.user, res},
+      user: { ...this.state.user, token: res},
       loggedIn: true
     });
-    localStorage.setItem('user', res.token);
+    // localStorage.setItem('user', res.token);
   })
   .catch(err=> {
     console.log(err);
@@ -66,11 +66,7 @@ renderUsername(){
 
   render(){
     return(
-      <div>
-
-      <p> Welcome {this.renderUsername()}</p>
-
-        <h2> SignUp </h2>
+      <div> 
 
         <SignupUser
           username={this.state.username}

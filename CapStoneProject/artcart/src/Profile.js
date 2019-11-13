@@ -10,9 +10,10 @@ class Profile extends Component {
         userProfile: {
         location: "",
         bio: "",
-        profilePic: ""
+        profilePic: "",
       },
-      dataLoaded: false
+      dataLoaded: false,
+      token: ""
       }
     }
   }
@@ -23,7 +24,7 @@ class Profile extends Component {
     fetch("http://localhost:8080/profile/post/{username}", {
       method: 'POST',
       headers: {
-        'Authorization': 'JWT token ' +  localStorage.getItem('user'),
+        'Authorization': 'JWT token ' +  this.state.user.token,
         'Content-Type' : 'application/json'
       },
       body: JSON.stringify ({

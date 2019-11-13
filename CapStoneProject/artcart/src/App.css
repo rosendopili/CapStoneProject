@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-:global(.App) {
+#root {
   text-align: center;
-  background-color: orange;
-  font-family: 'Raleway', sans-serif;
 }

@@ -5,12 +5,13 @@ import {
   Link,
   Switch
 } from 'react-router-dom';
-import './App.css'; 
+import './App.css';
 
 import Signup from './Signup';
 import Login from './Login';
 import Profile from './Profile';
 import Landing from './Landing';
+import Home from './Home';
 
 import Layout from './StyleComponents/Layout';
 import { NavBar } from './StyleComponents/NavBar';
@@ -28,11 +29,12 @@ class App extends Component {
           <Route exact path="/"
           component={Landing}/>
 
-          <Route exact path="/Signup" component={Signup}/>
+          <Route exact path="/Landing"
+          component={Landing}/>
 
-          <Route exact path="/Profile" component={Profile} />
+          <Route exact path="/Home" component={Home}/>
 
-          <Route exact path="/Login" component={Login} />
+          <Route exact path="/Profile" component={Profile}/>
 
           </Switch>
         </Router>
