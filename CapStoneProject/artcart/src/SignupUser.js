@@ -24,7 +24,7 @@ const SignupUser = (props) => {
         />
         <label htmlFor="password">Password</label>
         <input
-          type="text"
+          type="password"
           label="password"
           value={props.password}
           onChange={props.handlePasswordChange}

@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import LandingBG from './Assets/LandingBG.jpg';
+import './App.css';
 
 const LandingStyles = styled.div`
+    @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
 
   .landingDiv {
       background: url(${LandingBG}) no-repeat fixed bottom;
@@ -14,6 +16,8 @@ const LandingStyles = styled.div`
       z-index: -2;
       text-align: center;
       margin-bottom: 30px;
+      font-family: 'Big Shoulders Text', cursive;
+      letter-spacing: 1px;
     }
 
   p {
@@ -37,6 +41,7 @@ const LandingStyles = styled.div`
     }
     h3{
       margin-top: 5%;
+      font-weight: bold;
     }
 
   }
@@ -47,7 +52,7 @@ export const Landing = () => (
     <div className="landingDiv">
       <div className="overlay">
       <h3> About </h3>
-      <p> At artcart our goal is to provide artists with a platform for greater outreach and influence.  Join the community and support the work of our talented creators, makers, movers & shakers!</p>
+      <p> At artcart our goal is to provide artists with a platform for greater outreach and influence.  Join the community and support the work of our talented creators, makers, movers & shakers !</p>
       </div>
     </div>
   </LandingStyles>

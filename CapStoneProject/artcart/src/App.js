@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
 import {
   BrowserRouter as Router,
   Route,
   Link,
   Switch
 } from 'react-router-dom';
+import './App.css'; 
 
 import Signup from './Signup';
 import Login from './Login';

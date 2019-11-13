@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProfileUpdate from './ProfileUpdate';
+import './App.css'
 
 class Profile extends Component {
   constructor(props){
@@ -22,23 +23,21 @@ class Profile extends Component {
     fetch("http://localhost:8080/profile/post/{username}", {
       method: 'POST',
       headers: {
-        'Content-Type' : 'application/json',
-        'Authorization': 'bearer'
+        'Authorization': 'JWT token ' +  localStorage.getItem('user'),
+        'Content-Type' : 'application/json'
       },
       body: JSON.stringify ({
         location: this.state.userProfile.location,
         bio: this.state.userProfile.bio,
-        profilePic: this.state.user.profilePic
+        profilePic: this.state.userProfile.profilePic
       })
     })
     .then(res => {
       console.log(res, "PROFILE UPLOADED");
       this.setState({
-        userProfile: { ... this.state.userProfile,
-          token: res},
+        userProfile: { ... this.state.userProfile},
         dataLoaded: true
       })
-      localStorage.getItem('user', res.token);
     })
     .catch(err=> {
       console.log(err);
