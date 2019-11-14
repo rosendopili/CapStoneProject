@@ -15,13 +15,30 @@ const GalleryStyles = styled.div`
 
     .photoFrame {
       width: 500px;
-      height: 660px;
+      height: 720px;
       box-shadow: 0px 10px 15px gray;
-      margin-bottom: 20px;
-      margin: 0 auto;
       background-color: #D18D17;
       color: #EDDADA;
       border-radius: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      margin: 0 auto;
+      border: 10px solid #8F3DDB;
+    }
+
+    .galleryFrame {
+      margin-bottom: 20px;
+    }
+
+    .textContainer {
+      border: 1px solid black;
+      width: 450px;
+      margin: 0 auto;
+      border: 10px solid #2C6AC7;
+      border-radius: 20px;
+      box-shadow: 0px 5px 10px #634513;
+      background-color: #8F3DDB;
+      margin-bottom: 40px;
     }
 
     h4 {
@@ -32,6 +49,11 @@ const GalleryStyles = styled.div`
       border-radius: 8px;
       color: white;
       padding: 8px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 18px;
     }
 `;
 
@@ -76,8 +98,10 @@ class GetItems extends Component {
             <div className='photoFrame'>
               <img className='galleryPhoto'
               src={item.photo} />
-              <p>{item.itemName}</p>
+              <div className='textContainer'>
+              <p>{item.itemName }</p>
               <p>{item.description}</p>
+              </div>
             </div>
           )
         })}

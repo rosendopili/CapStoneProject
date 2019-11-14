@@ -11,10 +11,11 @@ const ProfileStyles = styled.div`
     box-shadow: 0px 10px 15px #634513;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 10px solid #2C6AC7;
   }
   .userFrame {
     width: 500px;
-    height: 660px;
+    height: 700px;
     margin: 0 auto;
     box-shadow: 0px 10px 15px gray;
     margin-bottom: 20px;
@@ -24,13 +25,34 @@ const ProfileStyles = styled.div`
   }
 
   a {
-    color: #634513;
+    color: white;
     font-weight: bold;
-
+    margin-bottom: 10px;
     &:hover {
-      color: white;
+      color: #FFB3B3;
       text-decoration: none;
     }
+  }
+  h4 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #8F3DDB;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+  }
+
+  .textContainer {
+    width: 430px;
+    height: 140px;
+    border: 10px solid #2C6AC7;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #8F3DDB;
+  }
+  p {
+    margin-top: 10px;
   }
 `;
 
@@ -66,15 +88,19 @@ class ProfilePage extends Component {
     return(
   <ProfileStyles>
     <div className='profileFrame'>
+    <h4> Community </h4>
+
       {this.state.users.length > 0 && this.state.users.reverse().map(user => {
         return(
           <div className='userFrame'>
             <img className='profilePicture'
             src={user.profilePic}/>
+            <div className='textContainer'>
             <p>location: {user.location}</p>
             <p>bio: {user.bio}</p>
             <a
             className='contactLink' href={`mailto:${user.email}`}>Contact {user.username}!</a>
+            </div>
           </div>
         )
       })}
