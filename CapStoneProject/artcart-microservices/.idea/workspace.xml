@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46620e47-d29f-4ed0-af97-a4b23c9c67c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/afterMigrate.sql" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,7 @@
       <workItem from="1573599762377" duration="711000" />
       <workItem from="1573614998929" duration="481000" />
       <workItem from="1573627656161" duration="516000" />
-      <workItem from="1573759841518" duration="97000" />
+      <workItem from="1573759841518" duration="503000" />
     </task>
     <servers />
   </component>
