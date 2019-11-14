@@ -11,7 +11,8 @@ import Signup from './Signup';
 import Login from './Login';
 import Landing from './Landing';
 import Home from './Home';
-import Item from './Item'; 
+import Item from './Item';
+import ProfilePage from './ProfilePage'; 
 
 import Layout from './StyleComponents/Layout';
 import { NavBar } from './StyleComponents/NavBar';
@@ -36,6 +37,9 @@ class App extends Component {
 
           <Route path="/Signup"
           component={Signup}/>
+
+          <Route path="/ProfilePage"
+          component={ProfilePage}/>
 
           <Route exact path="/Item"
           component={Item}/>

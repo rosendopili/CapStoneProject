@@ -60,8 +60,6 @@ render(){
 
     <div>
 
-    <GetItems />
-
     <PostItem
       itemName={this.state.itemName}
       description={this.state.description}
@@ -73,6 +71,7 @@ render(){
       handlePhotoChange={this.handlePhotoChange}
       submitForm={e => this.CreateItem(e)}/>
 
+  <GetItems />
     </div>
 
     )

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import LandingBG from './Assets/LandingBG.jpg';
 
 const GalleryStyles = styled.div`
 
@@ -15,7 +14,7 @@ const GalleryStyles = styled.div`
       width: 500px;
       height: 650px;
       border: 1px solid black;
-      margin: 0 auto; 
+      margin: 0 auto;
     }
 `;
 

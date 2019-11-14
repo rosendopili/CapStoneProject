@@ -17,7 +17,7 @@ const LoginStyles = styled.div`
       border: none;
       background-color: #2C6AC7;
       color: white;
-      width: 180px; 
+      width: 180px;
     }
     label{
       margin-bottom: 0px;
@@ -59,7 +59,8 @@ const LoginUser = (props) => {
           id="password"
           placeholder="password"
         />
-        <input className="submit" type="submit" value="Login" />
+        <input className="submit" type="submit" value="Login"
+        />
       </form>
       <a href="./Signup"> Don't have an account? </a>
     </div>

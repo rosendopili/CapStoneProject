@@ -5,7 +5,7 @@ const SignupStyles = styled.div`
 
   .signupDiv {
     width: 200px;
-    height: 400px;
+    height: 430px;
     background-color: #D18D17;
     border-radius: 25px;
     box-shadow: 0px 10px 20px gray;
@@ -19,13 +19,12 @@ const SignupStyles = styled.div`
     background-color: #2C6AC7;
     color: white;
     width: 180px;
-  }
-  label{
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 4px;
   }
   h5{
     padding-top: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     color: white;
   }
   input {
@@ -33,8 +32,20 @@ const SignupStyles = styled.div`
     text-align: center;
     margin-bottom: 18px;
     border-radius: 5px;
+    width: 180px;
   }
-
+  #bio {
+    width: 180px;
+    height: 60px;
+    word-wrap: break-word;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+  }
+  a{
+    margin-top: 0;
+  }
 
 `;
 
@@ -76,7 +87,7 @@ const SignupUser = (props) => {
           id="location"
           placeholder="location"
         />
-        <input
+        <textarea
           type="text"
           label="bio"
           value={props.bio}
@@ -94,7 +105,9 @@ const SignupUser = (props) => {
         />
         <input
         className="submit"
-        type="submit" value="Signup" />
+        type="submit" value="Signup"
+        onClick={this.ProfilePage}
+        />
         <a href="./Home"> have an account? </a>
       </form>
 

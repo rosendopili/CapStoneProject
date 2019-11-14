@@ -43,10 +43,10 @@ UserSignup = (e) => {
   .then(res=> {
     console.log(res, "TOKEN RECEIVED");
     this.setState({
-      user: { ...this.state.user, token: res},
+      user: { ...this.state.user},
       loggedIn: true
     });
-    // localStorage.setItem('user', res.token);
+    localStorage.setItem('user', res.token);
   })
   .catch(err=> {
     console.log(err);
