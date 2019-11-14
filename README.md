@@ -9,7 +9,6 @@ Rosendo Pili (<a href="https://github.com/rosendopili">@rosendopili</a>)<br/>
 * JAVA 
 * Docker
 * Zuul & Eureka
-* Cloudinary API
 
 ## FUNCTIONALITY
 
@@ -22,11 +21,14 @@ I quickly re-worked my existing API to include a user profile model, in addition
 
 With my monolith API complete and endpoint efficacy cconfirmed through postman testing, I Dockerized my project along with a Zuul API-gateway and Eureka server functionality.  I was under the gun here, with the weekend behind me and a partial front-end design left over from my original arcade idea, I was lucky enough to have spent only a day to get my microservice up and running.  
 
-Using cloudinary's image-hosting service, I was able to create an upload form for user photos that in turn, provided me with a URL that could be saved to my database.  
+Using cloudinary's image-hosting service, I was able to create an upload form for user photos that in turn, provided me with a URL that could be saved to my database.  Unfortunately I was unable to implement this in my final project and decided to let users upload existing URLs as a temporary work-around. 
 
-... to be continued
+Additionally, I began refactoring my API to expand the user data table and remove the userprofile table all together.  My new UI allowed existing users to log in while new users are routed to a signup page that collects their profile information.  This allowed me to bypass some complexity with my front-end rendering as the user profile functionalities would have all required token authorization.  
+
+With login and signup functionality for onboarding new and existing users, once I resolved the issue of user authentication and successfully posting new gallery-items while logged in, I had a minimal viable product.  Albeit, one that required a lot more work.  
 
 **PLANNING DOCUMENTATION**
+
 
 
 ## USER STORIES
