@@ -5,7 +5,7 @@ const SignupStyles = styled.div`
 
   .signupDiv {
     width: 200px;
-    height: 380px;
+    height: 400px;
     background-color: #D18D17;
     border-radius: 25px;
     box-shadow: 0px 10px 20px gray;
@@ -18,6 +18,7 @@ const SignupStyles = styled.div`
     border: none;
     background-color: #2C6AC7;
     color: white;
+    width: 180px;
   }
   label{
     margin-bottom: 0px;
@@ -30,13 +31,10 @@ const SignupStyles = styled.div`
   input {
     border: none;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border-radius: 5px;
   }
-  a {
-    text-align: center;
-    border: 1px solid white;
-  }
+
 
 `;
 

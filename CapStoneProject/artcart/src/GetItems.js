@@ -4,12 +4,21 @@ import LandingBG from './Assets/LandingBG.jpg';
 
 const GalleryStyles = styled.div`
 
-    .GalleryPhoto {
-      width: 300px;
-      height: 350px;
+    .galleryPhoto {
+      width: 450px;
+      height: 550px;
+      border: 10px solid black;
+      margin-top: 20px;
+    }
+
+    .photoFrame {
+      width: 500px;
+      height: 650px;
       border: 1px solid black;
+      margin: 0 auto; 
     }
 `;
+
 
 class GetItems extends Component {
   constructor(props){
@@ -44,12 +53,12 @@ class GetItems extends Component {
   render(){
     return(
       <GalleryStyles>
-      <div>
+      <div className='galleryFrame'>
         <h4> ArtCart Gallery </h4>
         {this.state.items.length > 0 && this.state.items.map(item => {
           return (
-            <div>
-              <img className='GalleryPhoto'
+            <div className='photoFrame'>
+              <img className='galleryPhoto'
               src={item.photo} />
               <p>{item.itemName}</p>
               <p>{item.description}</p>

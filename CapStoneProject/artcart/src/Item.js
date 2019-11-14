@@ -7,13 +7,7 @@ class Item extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: {
-        itemName: '',
-        description: '',
-        price: '',
-        photo: ''
-      },
-      // user: localStorage.getItem('user'),
+      item: [],
       itemLoaded: false
     }
   }

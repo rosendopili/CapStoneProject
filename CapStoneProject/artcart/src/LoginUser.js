@@ -17,12 +17,13 @@ const LoginStyles = styled.div`
       border: none;
       background-color: #2C6AC7;
       color: white;
+      width: 180px; 
     }
     label{
       margin-bottom: 0px;
     }
     h5{
-      padding-top: 15px; 
+      padding-top: 15px;
       margin-bottom: 35px;
       color: white;
     }
