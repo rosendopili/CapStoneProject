@@ -42,6 +42,9 @@ public class UserServiceImpl implements UserService {
         newUser.setUsername(newUser.getUsername());
         newUser.setPassword(newUser.getPassword());
         newUser.setEmail(newUser.getEmail());
+        newUser.setBio(newUser.getBio());
+        newUser.setLocation(newUser.getLocation());
+        newUser.setProfilePic(newUser.getProfilePic());
         if(userRepository.save(newUser) != null){
             UserDetails userDetails = loadUserByUsername(newUser.getUsername());
             return jwtUtil.generateToken(userDetails);

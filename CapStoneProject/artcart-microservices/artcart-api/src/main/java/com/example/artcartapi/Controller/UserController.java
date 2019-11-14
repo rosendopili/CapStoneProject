@@ -20,7 +20,7 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/user")
+    @GetMapping("/user/{username}")
     public User getUsers(String username){
         return userService.getUser(username);
     }
