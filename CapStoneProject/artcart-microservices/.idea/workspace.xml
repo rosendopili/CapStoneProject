@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46620e47-d29f-4ed0-af97-a4b23c9c67c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Controller/UserProfileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Model/UserProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Repository/UserProfileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserProfileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcart-api/src/main/java/com/example/artcartapi/Service/UserProfileServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/V1_create_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/artcart-api/src/main/resources/db/migration/V1_create_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../artcart/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../artcart/src/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../artcart/src/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../artcart/src/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../artcart/src/ProfileUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../artcart/src/ProfileUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../artcart/src/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../artcart/src/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../game/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../game/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../game/src/UserComponent/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game/src/Assets/BannerCropped.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game/src/StyleComponents/Banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game/src/StyleComponents/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../game/src/StyleComponents/NavBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/src/main/java/com/example/springbootmonolith/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-monolith/target/classes/com/example/springbootmonolith/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-monolith/target/classes/com/example/springbootmonolith/Model/User.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +89,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573599760145</updated>
-      <workItem from="1573599762377" duration="656000" />
+      <workItem from="1573599762377" duration="711000" />
+      <workItem from="1573614998929" duration="481000" />
+      <workItem from="1573627656161" duration="516000" />
     </task>
     <servers />
   </component>
@@ -101,7 +103,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

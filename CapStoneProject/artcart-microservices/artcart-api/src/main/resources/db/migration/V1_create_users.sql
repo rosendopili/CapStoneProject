@@ -2,15 +2,10 @@ CREATE TABLE users (
     id SERIAL,
     username VARCHAR(100) NOT NULL,
     email VARCHAR(50),
-    password VARCHAR(50)
-);
-
-CREATE TABLE user_profile (
-    id SERIAL,
+    password VARCHAR(50),
     location VARCHAR(50),
     bio VARCHAR(200),
-    profilePic STRING,
-    user_id FOREIGN KEY
+    profilePic STRING
 );
 
 CREATE TABLE inventory (

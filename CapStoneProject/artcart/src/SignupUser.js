@@ -7,7 +7,7 @@ const SignupStyles = styled.div`
     width: 200px;
     height: 430px;
     background-color: #D18D17;
-    border-radius: 25px;
+    border-radius: 33px;
     box-shadow: 0px 10px 20px gray;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -21,6 +21,7 @@ const SignupStyles = styled.div`
     width: 180px;
     margin-top: 0px;
     margin-bottom: 4px;
+    height: 25px;
   }
   h5{
     padding-top: 16px;
@@ -31,7 +32,7 @@ const SignupStyles = styled.div`
     border: none;
     text-align: center;
     margin-bottom: 18px;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 180px;
   }
   #bio {
@@ -39,7 +40,7 @@ const SignupStyles = styled.div`
     height: 60px;
     word-wrap: break-word;
     margin-bottom: 18px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     text-align: center;
   }
@@ -105,9 +106,9 @@ const SignupUser = (props) => {
         />
         <input
         className="submit"
-        type="submit" value="Signup"
-        onClick={this.ProfilePage}
-        />
+        type="submit"
+        value="Signup"
+          />
         <a href="./Home"> have an account? </a>
       </form>
 

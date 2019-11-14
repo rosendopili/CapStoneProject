@@ -8,7 +8,7 @@ const LoginStyles = styled.div`
       height: 280px;
       margin: 0 auto;
       background-color: #D18D17;
-      border-radius: 25px;
+      border-radius: 29px;
       box-shadow: 0px 10px 20px gray;
     }
     .submit {
@@ -18,6 +18,7 @@ const LoginStyles = styled.div`
       background-color: #2C6AC7;
       color: white;
       width: 180px;
+      height: 25px;
     }
     label{
       margin-bottom: 0px;
@@ -30,8 +31,9 @@ const LoginStyles = styled.div`
     input {
       border: none;
       text-align: center;
-      margin-bottom: 25px
-      border-radius: 5px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      width: 180px;
     }
 
 `;
@@ -59,7 +61,9 @@ const LoginUser = (props) => {
           id="password"
           placeholder="password"
         />
-        <input className="submit" type="submit" value="Login"
+        <input
+        className="submit" type="submit"
+        value="Login"
         />
       </form>
       <a href="./Signup"> Don't have an account? </a>

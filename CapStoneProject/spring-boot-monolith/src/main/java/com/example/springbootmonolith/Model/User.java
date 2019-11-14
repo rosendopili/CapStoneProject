@@ -29,12 +29,14 @@ public class User{
     @Column(nullable = false)
     private String password;
 
-    @JsonIgnore
-    @OneToOne (mappedBy ="user",
-            fetch = FetchType.LAZY,
-            optional = false,
-            cascade = CascadeType.ALL)
-    private UserProfile userProfile;
+    @Column
+    private String location;
+
+    @Column
+    private String bio;
+
+    @Column
+    private String profilePic;
 
     @JsonIgnore
     @OneToMany (mappedBy = "user",
@@ -66,6 +68,23 @@ public class User{
     public String getPassword () {return password;}
     public void setPassword (String password) {this.password = password;}
 
-    public UserProfile getUserProfile() { return userProfile; }
-    public void setUserProfile( UserProfile userProfile ) {this.userProfile = userProfile; }
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public String getProfilePic() { return profilePic;}
+
+    public void setProfilePic(String profilePic) { this.profilePic = profilePic; }
 }

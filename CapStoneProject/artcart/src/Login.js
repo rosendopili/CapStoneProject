@@ -3,6 +3,7 @@ import LoginUser from './LoginUser';
 import './App.css';
 import ReactDom from 'react-dom';
 import Popup from 'react-popup';
+import { Redirect } from 'react-router-dom';
 
 class Login extends Component {
   constructor(props){
@@ -40,10 +41,10 @@ class Login extends Component {
       })
       localStorage.setItem('user', res.token);
     })
-    .catch(err => {
-      console.log(err);
+    // if (this.state.loggedIn: false) {
+    //   alert ("username or password incorrect!");
+    // }
 
-    })
   }
   handleUsernameChange = e => {
     this.setState({ user: {... this.state.user, username: e.target.value}
@@ -54,8 +55,13 @@ class Login extends Component {
     });
   }
 
+
   render() {
+    if (this.state.loggedIn === true) {
+      return <Redirect to= "/ProfilePage" />
+    }
     return(
+
       <div>
 
         <LoginUser

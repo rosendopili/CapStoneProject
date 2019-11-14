@@ -19,8 +19,13 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/user")
-    public User getUsers(String username){
+//    @GetMapping("/user/{userId}")
+//    public User findByUserId(@PathVariable Long userId){
+//        return userService.findByUserId(userId);
+//    }
+
+    @GetMapping("/user/{username}")
+    public User getUser(@PathVariable String username){
         return userService.getUser(username);
     }
 

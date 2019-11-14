@@ -32,10 +32,7 @@ public class Item {
     private float price;
 
     @Column
-    private Blob photo1;
-
-    @Column
-    private Blob photo2;
+    private String photo;
 
     @ManyToOne (fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
@@ -53,11 +50,8 @@ public class Item {
     public String getDescription() { return description; }
     public void setDescription (String description) {this.description = description; }
 
-    public Blob getPhoto1() { return photo1; }
-    public void setPhoto1(Blob photo1) {this.photo1 = photo1; }
-
-    public Blob getPhoto2() { return photo2; }
-    public void setPhoto2(Blob photo1) {this.photo2 = photo1; }
+    public String getPhoto() { return photo; }
+    public void setPhoto(String photo) {this.photo = photo; }
 
     public User getUser() { return user; }
     public void setUser(User user) {this.user = user; }

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import SignupUser from './SignupUser';
 import User from './User';
 import './App.css';
+import { Redirect } from 'react-router-dom';
 
 class Signup extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       user: {
         username: "",
@@ -43,14 +43,11 @@ UserSignup = (e) => {
   .then(res=> {
     console.log(res, "TOKEN RECEIVED");
     this.setState({
-      user: { ...this.state.user},
+      user: {... this.state.user},
       loggedIn: true
     });
     localStorage.setItem('user', res.token);
   })
-  .catch(err=> {
-    console.log(err);
-  });
 }
 
 handleUsernameChange = e => {
@@ -78,11 +75,11 @@ handleProfilePicChange = e => {
   });
 }
 
-renderUsername(){
-  return this.state.username;
-}
-
   render(){
+    if (this.state.loggedIn) {
+      return <Redirect to= "/ProfilePage" />
+    }
+
     return(
       <div>
 
