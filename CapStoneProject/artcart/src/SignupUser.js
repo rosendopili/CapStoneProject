@@ -22,6 +22,9 @@ const SignupStyles = styled.div`
     margin-top: 0px;
     margin-bottom: 4px;
     height: 25px;
+    &:hover {
+      background-color: #388CE0 ;
+    }
   }
   h5{
     padding-top: 16px;
@@ -46,6 +49,11 @@ const SignupStyles = styled.div`
   }
   a{
     margin-top: 0;
+
+    &:hover {
+      text-decoration: none;
+      color: #AB03FF; 
+    }
   }
 
 `;

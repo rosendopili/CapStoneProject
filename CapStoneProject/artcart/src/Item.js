@@ -12,7 +12,7 @@ class Item extends Component {
     }
   }
   CreateItem = (e) => {
-    fetch('http://localhost:8080/items', {
+    fetch('http://localhost:8082/items', {
       method: 'POST',
       headers: {
         'Authorization': 'Bearer ' +

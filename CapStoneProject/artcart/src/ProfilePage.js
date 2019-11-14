@@ -4,17 +4,34 @@ import styled from 'styled-components';
 const ProfileStyles = styled.div`
 
   .profilePicture {
-    width: 400px;
+    width: 430px;
     height: 500px;
     object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0px 10px 15px #634513;
+    margin-bottom: 20px;
+    border-radius: 20px;
   }
-
   .userFrame {
-    width: 450px;
-    height: 600px;
-    border: 1px solid black;
+    width: 500px;
+    height: 660px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 15px gray;
+    margin-bottom: 20px;
+    background-color: #D6890D;
+    color: #EDDADA;
+    border-radius: 20px;
   }
 
+  a {
+    color: #634513;
+    font-weight: bold;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 `;
 
 class ProfilePage extends Component {
@@ -26,7 +43,7 @@ class ProfilePage extends Component {
     }
   }
   componentDidMount = () => {
-    fetch("http://localhost:8080/user/list", {
+    fetch("http://localhost:8082/user/list", {
       method: 'GET',
       headers: {
         'Authorization':'Bearer ' + localStorage.getItem('user'),
@@ -49,14 +66,15 @@ class ProfilePage extends Component {
     return(
   <ProfileStyles>
     <div className='profileFrame'>
-      {this.state.users.length > 0 && this.state.users.map(user => {
+      {this.state.users.length > 0 && this.state.users.reverse().map(user => {
         return(
           <div className='userFrame'>
             <img className='profilePicture'
             src={user.profilePic}/>
-            <p>{user.location}</p>
-            <p>{user.bio}</p>
-            <a href={`mailto:${user.email}`}>Contact {user.username}</a>
+            <p>location: {user.location}</p>
+            <p>bio: {user.bio}</p>
+            <a
+            className='contactLink' href={`mailto:${user.email}`}>Contact {user.username}!</a>
           </div>
         )
       })}

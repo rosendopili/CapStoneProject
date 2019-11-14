@@ -19,6 +19,10 @@ const LoginStyles = styled.div`
       color: white;
       width: 180px;
       height: 25px;
+
+      &:hover {
+        background-color: #388CE0 ;
+      }
     }
     label{
       margin-bottom: 0px;
@@ -34,6 +38,13 @@ const LoginStyles = styled.div`
       margin-bottom: 25px;
       border-radius: 8px;
       width: 180px;
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+        color: #AB03FF;
+      }
     }
 
 `;

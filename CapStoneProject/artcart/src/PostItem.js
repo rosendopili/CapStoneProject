@@ -1,21 +1,59 @@
 import React from 'react';
 import Item from './Item';
+import styled from 'styled-components';
+
+const PostItemStyles = styled.div `
+
+  .itemForm {
+    width: 600px;
+    height: 240px;
+    margin: 0 auto;
+    background-color: #D18D17;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  input {
+    width: 100%;
+    margin-top: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .submit {
+    background-color: #2C6AC7;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #388CE0 ; 
+    }
+  }
+
+`;
+
 
 const PostItem = (props) => {
   return (
+    <PostItemStyles>
     <div>
-      <h3> Post Items </h3>
-      <form onSubmit={e => props.submitForm(e)}>
-        <label htmlFor="itemName">Name</label>
+      <form
+      className="itemForm"
+      onSubmit={e => props.submitForm(e)}>
+
         <input
           type="text"
           label="itemName"
           value={props.itemName}
           onChange={props.handleItemNameChange}
           id="itemName"
-          placeholder="itemName"
+          placeholder="title"
         />
-        <label htmlFor="description">Description</label>
+
         <input
           type="text"
           label="description"
@@ -24,7 +62,7 @@ const PostItem = (props) => {
           id="description"
           placeholder="description"
         />
-        <label htmlFor="photo">Photo URL</label>
+
           <input
             type="text"
             label="photo"
@@ -33,9 +71,12 @@ const PostItem = (props) => {
             id="photo"
             placeholder="photo URL"
           />
-        <input type="submit" value="Post Item!" />
+        <input
+        className="submit"
+        type="submit" value="Post Item!" />
       </form>
     </div>
+    </PostItemStyles>
   )
 }
 
