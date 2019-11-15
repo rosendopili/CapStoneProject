@@ -14,6 +14,16 @@ Rosendo Pili (<a href="https://github.com/rosendopili">@rosendopili</a>)<br/>
 
 The back-end of this project is comprised of a microservice API with User and Inventory tables.  
 
+The ArtCart API is a dockerized spring-boot application with a eureka server and zuul gateway. 
+
+The front-end of this project was constructed using React.JS. 
+
+The API endpoints enable user signup, login, delete user, create items, delete items, list all items, list items by user, list users and retrieve a single user by username.  
+
+The front-end application currently enables users to signup, log in, create items, list all items and list all users. 
+
+Due to time constraints, I was unable to utilize all of the API functionality but as it stands, the ArtCart web application still holds value as a means for users to interact with other members of the ArtCart community while displaying works of art or photography.  
+
 ## HURDLES, SETBACKS & SUCCESSES 
 
 I originally set forth to create a web-based arcade application.  My monolith API was designed to manage player accounts and statistics, however, the setbacks I encountered (namely with refactoring my Javascript code to React specifications) gave me pause enough to pivot.  
