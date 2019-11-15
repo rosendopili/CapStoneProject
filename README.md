@@ -10,6 +10,7 @@ Rosendo Pili (<a href="https://github.com/rosendopili">@rosendopili</a>)<br/>
 * JAVA 
 * Docker
 * Zuul & Eureka
+* PostgreSQL
 
 ## FUNCTIONALITY
 
