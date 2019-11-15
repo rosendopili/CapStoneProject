@@ -12,6 +12,7 @@ Rosendo Pili (<a href="https://github.com/rosendopili">@rosendopili</a>)<br/>
 
 ## FUNCTIONALITY
 
+The back-end of this project is comprised of a microservice API with User and Inventory tables.  
 
 ## HURDLES, SETBACKS & SUCCESSES 
 
@@ -29,7 +30,14 @@ With login and signup functionality for onboarding new and existing users, once 
 
 **PLANNING DOCUMENTATION**
 
+<img src="https://github.com/rosendopili/CapStoneProject/blob/master/CapStoneProject/ERDiagrams/ER%20diagram.jpg" alt="ERD"
+	width="500" height="300" />
 
+ERD for back-end to front-end workflow. 
+
+<img src="https://github.com/rosendopili/CapStoneProject/blob/master/CapStoneProject/ERDiagrams/ONEtoMANY.jpg" alt="ERD"
+	width="500" height="300" />
+DataTable relations between User and Inventory. 
 
 ## USER STORIES
 
