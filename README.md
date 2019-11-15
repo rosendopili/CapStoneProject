@@ -62,7 +62,7 @@ With login and signup functionality for onboarding new and existing users, once 
 **ADMIN**
 * As an admin, I can access the database to remove any explicit content and delete any users that violate ArtCart's terms and conditions. 
 
-## Link
+## Related Links
 The AWS deployment can be viewed [here](http://arcade-deploy-3.s3-website-us-east-1.amazonaws.com/)
 
 PostMan tests can be viewed in the [POSTMAN_TESTING](https://github.com/rosendopili/CapStoneProject/tree/master/CapStoneProject/POSTMAN_TESTING) folder above.
