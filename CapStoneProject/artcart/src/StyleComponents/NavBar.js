@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
+import Logout from '../Logout';
 
 const Styles = styled.div`
  .navbar {
@@ -9,11 +10,16 @@ const Styles = styled.div`
 
  .navbar-brand, .navbar-nav .nav-link {
    color: #EDDADA;
-
+}
    &:hover {
      color: white;
    }
- }
+
+   .nav.Item {
+    &:hover{
+      color:white;
+    }
+   }
 `;
 
 export const NavBar = () => (
@@ -27,6 +33,7 @@ export const NavBar = () => (
             <Nav.Item><Nav.Link href="/Landing"> Landing</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="/ProfilePage"> Community </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link href="/Item">Gallery</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/Logout">Log Out</Nav.Link></Nav.Item>
           </Nav>
       </Navbar.Collapse>
       </Navbar>

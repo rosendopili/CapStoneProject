@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ListItem from './ListItem';
 import PostItem from './PostItem';
 import GetItems from './GetItems';
 
