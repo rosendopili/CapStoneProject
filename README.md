@@ -1,4 +1,4 @@
-### ARTCART
+## ARTCART
 ## Capstone Project for the American Express Developer Academy
 ArtCart: a web-based art community meant to encourage, enfranchise and empower artists by providing a platform to display their work, convey their message and expand their influence. 
 
