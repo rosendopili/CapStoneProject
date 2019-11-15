@@ -1,4 +1,5 @@
-## CAPSTONE PROJECT
+## ARTCART
+## Capstone Project for the American Express Developer Academy
 ArtCart: a web-based art community meant to encourage, enfranchise and empower artists by providing a platform to display their work, convey their message and expand their influence. 
 
 ## Designed by:  
@@ -12,6 +13,29 @@ Rosendo Pili (<a href="https://github.com/rosendopili">@rosendopili</a>)<br/>
 
 ## FUNCTIONALITY
 
+The back-end of this project is comprised of a microservice API with User and Inventory tables.  
+
+The ArtCart API is a dockerized spring-boot application with a eureka server and zuul gateway. 
+
+The front-end of this project was constructed using React.JS. 
+
+The API endpoints enable user signup, login, delete user, create items, delete items, list all items, list items by user, list users and retrieve a single user by username.  
+
+The front-end application currently enables users to signup, log in, create items, list all items and list all users. 
+
+Due to time constraints, I was unable to utilize all of the API functionality but as it stands, the ArtCart web application still holds value as a means for users to interact with other members of the ArtCart community while displaying works of art or photography. 
+
+**PLANNING DOCUMENTATION**
+
+<img src="https://github.com/rosendopili/CapStoneProject/blob/master/CapStoneProject/ERDiagrams/ER%20diagram.jpg" alt="ERD"
+	width="500" height="300" />
+
+ERD for back-end to front-end workflow. 
+
+<img src="https://github.com/rosendopili/CapStoneProject/blob/master/CapStoneProject/ERDiagrams/ONEtoMANY.jpg" alt="ERD"
+	width="500" height="300" />
+	
+DataTable relations between User and Inventory. 
 
 ## HURDLES, SETBACKS & SUCCESSES 
 
@@ -26,10 +50,6 @@ Using cloudinary's image-hosting service, I was able to create an upload form fo
 Additionally, I began refactoring my API to expand the user data table and remove the userprofile table all together.  My new UI allowed existing users to log in while new users are routed to a signup page that collects their profile information.  This allowed me to bypass some complexity with my front-end rendering as the user profile functionalities would have all required token authorization.  
 
 With login and signup functionality for onboarding new and existing users, once I resolved the issue of user authentication and successfully posting new gallery-items while logged in, I had a minimal viable product.  Albeit, one that required a lot more work.  
-
-**PLANNING DOCUMENTATION**
-
-
 
 ## USER STORIES
 
