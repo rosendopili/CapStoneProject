@@ -33,11 +33,11 @@ With login and signup functionality for onboarding new and existing users, once 
 
 ## USER STORIES
 
-**Rosendo, a local artist**
-* Rosendo is a local artist looking to improve his on-line presence and gain more notoriety for his paintings and murals.  He uses CartArt to post images of his work with the hopes of reaching a larger audience. 
+**USER**
+* As a user, I want a platform to host my art and connect with other members of the art community. 
 
-**Sheryl, an art-collector and gallery owner**
-* Sheryl posts images of the work she displays in her gallery, hoping to attract more artist submissions.  She also uses the platform to search for new talent and new works of art to purchase for her personal collection. 
+**INTERNAL STAKEHOLDER**
+* As an internal stakeholder and funder, I want to see the online art community grow through the use of ArtCart and eventually monetize the terms of membership. 
 
-**Jeff, a newcomer to the artworld**
-* Jeff has always had a general interest in art but never had a community to lean on for advice, inspiration and camaraderie.  He uses the platform to connect with local artists and to see all of the amazing work his new-found contemporaries are putting out into the world. 
+**ADMIN**
+* As an admin, I can access the database to remove any explicit content and delete any users that violate ArtCart's terms and conditions. 
