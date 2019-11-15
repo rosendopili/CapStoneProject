@@ -37,6 +37,7 @@ ERD for back-end to front-end workflow.
 
 <img src="https://github.com/rosendopili/CapStoneProject/blob/master/CapStoneProject/ERDiagrams/ONEtoMANY.jpg" alt="ERD"
 	width="500" height="300" />
+	
 DataTable relations between User and Inventory. 
 
 ## USER STORIES
