@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import LoginUser from './LoginUser';
 import './App.css';
-import ReactDom from 'react-dom';
-import Popup from 'react-popup';
 import { Redirect } from 'react-router-dom';
 
 class Login extends Component {
@@ -35,22 +33,19 @@ class Login extends Component {
     .then(res => {
       console.log(res, "TOKEN RECEIVED");
       this.setState({
-        user: {... this.state.user},
+        user: {...this.state.user},
         loggedIn: true,
       })
       localStorage.setItem('user', res.token);
     })
-    // if (this.state.loggedIn: false) {
-    //   alert ("username or password incorrect!");
-    // }
 
   }
   handleUsernameChange = e => {
-    this.setState({ user: {... this.state.user, username: e.target.value}
+    this.setState({ user: {...this.state.user, username: e.target.value}
     });
   }
   handlePasswordChange = e => {
-    this.setState({ user: {... this.state.user, password: e.target.value}
+    this.setState({ user: {...this.state.user, password: e.target.value}
     });
   }
 

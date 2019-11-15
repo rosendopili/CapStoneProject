@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom';
 import './App.css';
 
 import Signup from './Signup';
-import Login from './Login';
 import Landing from './Landing';
 import Home from './Home';
 import Item from './Item';
 import ProfilePage from './ProfilePage';
-import Logout from './Logout'; 
+import Logout from './Logout';
 
 import Layout from './StyleComponents/Layout';
 import { NavBar } from './StyleComponents/NavBar';

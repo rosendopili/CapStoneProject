@@ -1,5 +1,4 @@
 import React from 'react';
-import Item from './Item';
 import styled from 'styled-components';
 
 const PostItemStyles = styled.div `
@@ -30,7 +29,7 @@ const PostItemStyles = styled.div `
     border-radius: 5px;
 
     &:hover {
-      background-color: #388CE0 ; 
+      background-color: #388CE0 ;
     }
   }
 

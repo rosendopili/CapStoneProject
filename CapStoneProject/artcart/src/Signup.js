@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SignupUser from './SignupUser';
-import User from './User';
 import './App.css';
 import { Redirect } from 'react-router-dom';
 
@@ -42,7 +41,7 @@ UserSignup = (e) => {
   .then(res=> {
     console.log(res, "TOKEN RECEIVED");
     this.setState({
-      user: {... this.state.user},
+      user: {...this.state.user},
       loggedIn: true
     });
     localStorage.setItem('user', res.token);
@@ -50,27 +49,27 @@ UserSignup = (e) => {
 }
 
 handleUsernameChange = e => {
-  this.setState({ user: {... this.state.user, username: e.target.value}
+  this.setState({ user: {...this.state.user, username: e.target.value}
   });
 }
 handleEmailChange = e => {
-  this.setState({ user: {... this.state.user, email: e.target.value}
+  this.setState({ user: {...this.state.user, email: e.target.value}
   });
 }
 handlePasswordChange = e => {
-  this.setState({ user: {... this.state.user, password: e.target.value}
+  this.setState({ user: {...this.state.user, password: e.target.value}
   });
 }
 handleLocationChange = e => {
-  this.setState({ user: {... this.state.user, location: e.target.value}
+  this.setState({ user: {...this.state.user, location: e.target.value}
   });
 }
 handleBioChange = e => {
-  this.setState({ user: {... this.state.user, bio: e.target.value}
+  this.setState({ user: {...this.state.user, bio: e.target.value}
   });
 }
 handleProfilePicChange = e => {
-  this.setState({ user: {... this.state.user, profilePic: e.target.value}
+  this.setState({ user: {...this.state.user, profilePic: e.target.value}
   });
 }
 
