@@ -68,7 +68,7 @@ class GetItems extends Component {
   }
 
   componentDidMount = () => {
-    fetch("http://52.90.97.150/items/list", {
+    fetch("http://localhost:8082/items/list", {
       method: 'GET',
       headers: {
         'Authorization':'Bearer ' +

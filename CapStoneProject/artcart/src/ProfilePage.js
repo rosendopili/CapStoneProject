@@ -65,7 +65,7 @@ class ProfilePage extends Component {
     }
   }
   componentDidMount = () => {
-    fetch("http://52.90.97.150/user/list", {
+    fetch("http://52.90.97.150:8082/user/list", {
       method: 'GET',
       headers: {
         'Authorization':'Bearer ' + localStorage.getItem('user'),

@@ -21,7 +21,7 @@ class Signup extends Component {
 
 UserSignup = (e) => {
   e.preventDefault();
-  fetch("http://52.90.97.150/signup", {
+  fetch("http://localhost:8082/signup", {
     method: 'POST',
     headers: {
       'Content-Type' : 'application/json'
