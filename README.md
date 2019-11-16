@@ -65,5 +65,6 @@ With login and signup functionality for onboarding new and existing users, once 
 
 ## Related Links
 The AWS deployment can be viewed [here](http://arcade-deploy-3.s3-website-us-east-1.amazonaws.com/).
+Unfortunately, I am currently having issues with the live deployment.  The log-in page renders but access to other pages returns a 404 error.  Please note that the fetch calls in my build reflect the the ipv4 address and the API serverport.
 
 Pictures of my postman tests can be viewed in the [here](https://github.com/rosendopili/CapStoneProject/tree/master/CapStoneProject/POSTMAN_TESTING).
