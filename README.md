@@ -68,3 +68,4 @@ The AWS deployment can be viewed [here](http://arcade-deploy-3.s3-website-us-eas
 Unfortunately, I am currently having issues with the live deployment.  The log-in page renders but access to other pages returns a 404 error.  Please note that the fetch calls in my build reflect my EC2 ipv4 address and the API serverport.  The fetch calls from this repo are pointed towards localhost:8082.  
 
 Pictures of my postman tests can be viewed in the [here](https://github.com/rosendopili/CapStoneProject/tree/master/CapStoneProject/POSTMAN_TESTING).
+Please note that these postman tests reflect the ArtCart API before I merged the User and User_Profile tables. 
