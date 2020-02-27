@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import LandingBG from './Assets/LandingBG.jpg';
-import './App.css';
+import LandingBG from '../Assets/LandingBG.jpg';
 import { Container } from 'react-bootstrap';
 
 const LandingStyles = styled.div`

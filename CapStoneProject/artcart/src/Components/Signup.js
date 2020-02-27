@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import SignupUser from './SignupUser';
-import './App.css';
+import SignupUser from './UserComponents/SignupUser';
 import { Redirect } from 'react-router-dom';
 
 class Signup extends Component {

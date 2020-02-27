@@ -6,12 +6,12 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
-import Signup from './Signup';
-import Landing from './Landing';
-import Home from './Home';
-import Item from './Item';
-import ProfilePage from './ProfilePage';
-import Logout from './Logout';
+import Signup from './Components/Signup';
+import Landing from './Components/Landing';
+import Home from './Components/Home';
+import Item from './Components/Item';
+import ProfilePage from './Components/ProfilePage';
+import Logout from './Components/Logout';
 
 import Layout from './StyleComponents/Layout';
 import { NavBar } from './StyleComponents/NavBar';

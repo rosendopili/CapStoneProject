@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import LoginUser from './LoginUser';
-import './App.css';
+import LoginUser from './UserComponents/LoginUser';
 import { Redirect } from 'react-router-dom';
 
 class Login extends Component {

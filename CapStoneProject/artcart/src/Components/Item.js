@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PostItem from './PostItem';
-import GetItems from './GetItems';
+import PostItem from './ItemComponents/PostItem';
+import GetItems from './ItemComponents/GetItems';
 
 class Item extends Component {
   constructor(props) {
