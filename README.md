@@ -28,11 +28,11 @@ Due to time constraints, I was unable to utilize all of the API functionality bu
 
 **PLANNING DOCUMENTATION**
 
-[](./CapStoneProject/blob/master/CapStoneProject/ERDiagrams/ER%20diagram.jpg)
+![](./CapStoneProject/ERDiagrams/ER%20diagram.jpg)
 
 ERD for back-end to front-end workflow. 
 
-[](./CapStoneProject/ERDiagrams/ONEtoMANY.jpg)
+![](./CapStoneProject/ERDiagrams/ONEtoMANY.jpg)
 	
 DataTable relations between User and Inventory. 
 
